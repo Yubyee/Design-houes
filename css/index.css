@@ -1,0 +1,326 @@
+/* index.css */
+@media (min-width:1250px){ 
+    main{
+        position: relative;
+    }
+    main .con_01{
+        background: url('http://www.designhouse.co.kr/upload/contents/c57c87cdb403f7b050cf92445f06925e.jpg') no-repeat center 68% ;
+        background-size: cover;    
+        position:absolute; left:0; top:0;
+        width:100%; height:100%;
+    }
+    main .con_01 div{
+        width: 1250px;
+        position:absolute;
+        left:50%; top:20%;
+        transform: translateX(-50%);
+        z-index:10;
+    }
+    main .con_01 div h2{  
+        position: relative;    
+        height: 80px;   
+        overflow: hidden;
+    }
+    main .con_01 div h2 span{
+        text-transform: uppercase;
+        position: absolute; 
+        font-size: 2.5em;
+        letter-spacing: -3px;  
+        color: #fff;    
+        animation: a1 1s forwards;
+    }
+    @keyframes a1{
+        0%{transform: translateY(100%); opacity: 0;}
+        100%{transform: translateY(0%); opacity: 1;}
+    }
+    main .con_01 div p{  
+        height: 60px; 
+        position: relative; 
+    }
+    main .con_01 div p > span{
+        color: #fff;    
+        position: absolute; 
+        font-size: 1em;
+        letter-spacing: -1px;
+        font-weight: 400;
+        animation: a2 0.5s 0.5s forwards;
+        opacity: 0;
+        line-height: 1.5;
+    }
+    @keyframes a2{
+        0%{transform: translateY(100%);}
+        100%{transform: translateY(0%); opacity: 1;}
+    }
+
+    main .con_01 h5{
+        position: relative;   
+        height: 30px;  
+    }
+    main .con_01 h5 span{
+        color: #fff;   
+        position: absolute;  
+        font-size: 1.2em;
+        letter-spacing: -1px;
+        font-weight: 400;
+        animation: a3 0.5s 0.5s forwards;
+        opacity: 0;
+        text-transform: uppercase;
+    }
+    @keyframes a3{
+        0%{transform: translateY(100%);}
+        100%{transform: translateY(0%); opacity: 1;}
+    }
+    main .con_01 a:hover h5 span{
+        text-decoration: underline;
+    }
+
+    main .con_01::after{
+        content: '';
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0; top: 0;
+        z-index: 1;    
+    }
+
+    .index_indicator{
+        position:absolute;
+        left:50%; top:50%;
+        width:1250px;
+        transform: translate(-50%,-50%);
+        z-index:3;
+
+        display:flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+    .index_indicator a{
+        width: 5px;
+        height: 5px;
+        border-radius: 2.5px;
+        background-color: #fff;
+        margin: 10px 0;
+    }
+}
+
+@media (min-width:768px) and (max-width:1249px){ 
+    main{
+        position: relative;
+    }
+    main .con_01{
+        background: url('http://www.designhouse.co.kr/upload/contents/c57c87cdb403f7b050cf92445f06925e.jpg') no-repeat center 68% ;
+        background-size: cover;    
+        position:absolute; left:0; top:0;
+        width:100%; height:100%;
+    }
+    main .con_01 div{
+        width: 100%;    
+        position:absolute;
+        top:20%;
+        z-index:2;
+        padding: 0 5%;
+    }    
+    main .con_01 div h2{  
+        height: 80px; 
+        overflow: hidden;
+        position: relative;
+    }
+    main .con_01 div h2 span{
+        text-transform: uppercase;
+        position: absolute; 
+        font-size: 2.5em;
+        letter-spacing: -3px;  
+        color: #fff;    
+        animation: a1 1s forwards;
+    }
+    @keyframes a1{
+        0%{transform: translateY(100%); opacity: 0;}
+        100%{transform: translateY(0%); opacity: 1;}
+    }
+    main .con_01 div p{   
+        height: 60px; 
+        position: relative; 
+    }
+    main .con_01 div p > span{
+        color: #fff;   
+        position: absolute;  
+        font-size: 1em;
+        letter-spacing: -1px;
+        font-weight: 400;
+        animation: a2 0.5s 0.5s forwards;
+        opacity: 0;
+        line-height: 1.5;
+    }
+    @keyframes a2{
+        0%{transform: translateY(100%);}
+        100%{transform: translateY(0%); opacity: 1;}
+    }
+
+    main .con_01 h5{
+        height: 30px;
+        position: relative;  
+    }
+    main .con_01 h5 span{
+        color: #fff; 
+        position: absolute;    
+        font-size: 1.2em;
+        letter-spacing: -1px;
+        font-weight: 400;
+        animation: a3 0.5s 0.5s forwards;
+        opacity: 0;
+        text-transform: uppercase;
+    }
+    @keyframes a3{
+        0%{transform: translateY(100%);}
+        100%{transform: translateY(0%); opacity: 1;}
+    }
+    main .con_01 a:hover h5 span{
+        text-decoration: underline;
+    }
+
+    main .con_01::after{
+        content: '';
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0; top: 0;
+        z-index: 1;    
+    }
+
+    .index_indicator{
+        position:absolute;
+        left:50%; top:50%;
+        width: 100%;    
+        transform: translate(-50%,-50%);
+        z-index:3;
+        padding: 0 5%;
+        display:flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+    .index_indicator a{
+        width: 5px;
+        height: 5px;
+        border-radius: 2.5px;
+        background-color: #fff;
+        margin: 10px 0;
+    }
+}
+
+
+
+@media (max-width:767px){ 
+    main{
+        position: relative;
+    }
+    main .con_01{
+        background: url('http://www.designhouse.co.kr/upload/contents/c57c87cdb403f7b050cf92445f06925e.jpg') no-repeat center 68% ;
+        background-size: cover;    
+        position:absolute; left:0; top:0;
+        width:100%; height:100%;
+    }
+    main .con_01 div{
+        width: 100%;
+        height: 100%;
+        position:absolute;
+        top:20%;
+        z-index:2;
+        padding: 0 5%;
+    }  
+    main .con_01 div h2{
+        position: relative;
+        line-height: 1;
+        height: 80px;        
+    }
+    main .con_01 div h2 span{     
+        position: absolute; 
+        text-transform: uppercase;
+        font-size: 2.5em;
+        letter-spacing: -3px;  
+        color: #fff;    
+        animation: a1 1s forwards;
+        width: 90%;  
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; 
+    }
+    @keyframes a1{
+        0%{transform: translateY(100%); opacity: 0;}
+        100%{transform: translateY(0%); opacity: 1;}
+    }
+    main .con_01 div p{   
+        position: relative;
+        height: 60px;
+    }
+    main .con_01 div p > span{
+        color: #fff; 
+        position: absolute;    
+        font-size: 1em;
+        letter-spacing: -1px;
+        font-weight: 400;
+        animation: a2 0.5s 0.5s forwards;
+        opacity: 0;
+        line-height: 1.5;
+        width: 90%;  
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; 
+    }
+    @keyframes a2{
+        0%{transform: translateY(100%);}
+        100%{transform: translateY(0%); opacity: 1;}
+    }    
+    main .con_01 h5{
+        position: relative;  
+        height: 30px;
+    }
+    main .con_01 h5 span{
+        color: #fff;   
+        position: absolute; 
+        font-size: 1.2em;
+        letter-spacing: -1px;
+        font-weight: 400;
+        white-space: pre-line;
+        animation: a3 0.5s 0.5s forwards;
+        opacity: 0;
+        text-transform: uppercase;
+    }
+    @keyframes a3{
+        0%{transform: translateY(100%);}
+        100%{transform: translateY(0%); opacity: 1;}
+    }
+    main .con_01 a:hover h5 span{
+        text-decoration: underline;
+    }
+
+    main .con_01::after{
+        content: '';
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0; top: 0;
+        z-index: 1;    
+    }
+
+    .index_indicator{
+        position:absolute;
+        left:50%; top:50%;
+        width: 100%;
+        transform: translate(-50%,-50%);
+        z-index:3;
+        padding: 0 5%;
+        display:flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+    .index_indicator a{
+        width: 5px;
+        height: 5px;
+        border-radius: 2.5px;
+        background-color: #fff;
+        margin: 10px 0;
+    }
+}

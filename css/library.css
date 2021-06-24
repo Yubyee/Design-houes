@@ -1,0 +1,900 @@
+/* library.css */
+
+.nav_h .menu_list li:nth-child(2) > a{
+    background-color: #fdd000;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.title_top{
+    background: url('../img/library/title.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+
+/* lib_shop */
+.lib_shop{
+    position: relative;
+
+}
+.lib_shop .shop_wrap{
+    width: 100%;    
+    margin-bottom: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+.lib_shop .shop_wrap figure{
+    position: relative;   
+    border-radius: 0 0 0 50px;
+    overflow: hidden;
+}
+.lib_shop .shop_wrap figure img{
+    width: 100%;
+}
+.lib_shop .shop_wrap figure figcaption{
+    position: absolute;
+    left: 0; top: 0;
+    text-align: center;
+    background-color: #fdd000;
+    color: #333;
+    font-size: 1.5em;
+    line-height: 1;
+    display: flex;    
+    align-items: center;
+    text-transform: uppercase;
+    width: 80px;
+    height: 80px;  
+}
+.lib_shop .shop_wrap .shop_txt{      
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.lib_shop .shop_wrap .shop_txt *{
+    margin: 10px 0;
+    line-height: 1;
+}
+.lib_shop .shop_wrap .shop_txt h3{
+    font-size: 2.5em;
+}
+.lib_shop .shop_wrap .shop_txt h5{
+    font-size: 1.2em;
+    text-decoration: line-through;
+}
+.lib_shop .shop_wrap .shop_txt h4{
+    font-size: 1.5em;
+}
+.lib_shop .shop_wrap .shop_bt{
+    display: flex;
+}
+.lib_shop .shop_wrap .shop_bt a{
+    text-align: center;
+    font-size: 1.5em;
+}
+.lib_shop .shop_wrap .shop_bt a:nth-child(1){
+    background-color: #333;
+    color: #fff;
+}
+.lib_shop .shop_wrap .shop_bt a:nth-child(2){
+    background-color: #fdd000;
+    color: #333;
+}
+.lib_shop .indi_ver{
+    position: absolute;
+}
+.lib_shop .indi_ver a{
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background-color: #333;
+    margin: 10px 0;
+}
+
+/* lib_list */
+
+.lib_list{
+    background-color: #dedede;      
+    padding: 100px 0;  
+    position: relative;
+    width: 100%;
+}
+.lib_list .lib_slid_btn{
+    position: absolute;
+    z-index: 99;
+}
+.before{
+    position: relative;
+}
+.before img{
+    position: absolute;
+}
+.after{ 
+    position: relative;
+}
+.after img{
+    position: absolute;
+}
+.lib_list .lib_slid ul{
+    width: 100%;
+}
+.lib_list .lib_slid ul .list_items .list_img{
+    border-radius: 0 0 0 50px;
+    margin-bottom: 50px;  
+    overflow: hidden;
+}
+.lib_list .lib_slid ul .list_items .list_img img{
+    width: 100%;    
+    transition: 0.5s;
+}
+.lib_list .lib_slid ul .list_items .list_name{
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1;
+}
+.lib_list .lib_slid ul .list_items .list_img:hover img{
+    transform: scale(1.1) ;
+}
+
+
+
+
+/* lib_benefit */
+
+.lib_benefit{
+    /* padding: 150px 0; */
+}
+.lib_benefit li {    
+    margin: 25px 0;    
+    align-items: center;
+}
+.lib_benefit li > p{
+    background-color: #fdd000;
+    font-weight: 800;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.lib_benefit li div{
+    display: inline-block;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+.lib_benefit li div b{
+}
+.lib_benefit li div p{
+    color: #454545;
+}
+.lib_benefit li:nth-child(3) > p{
+    background-color: #333;
+    color: #fff;
+}
+
+
+/* lib_exp */
+
+/* .lib_exp{
+    margin-bottom: 150px;
+} */
+
+
+/* .exp_1 */
+
+.lib_exp .exp_1{   
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.lib_exp .exp_1> *{
+    margin: 10px 0;
+}
+.lib_exp .exp_1 h3{
+    font-size: 2em;
+}
+.lib_exp .exp_1 h4{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.lib_exp .exp_1 a{
+    background-color: #f9e000;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid #3c1e1e; */
+}
+.lib_exp .exp_1 a span{
+    display: inline-block;
+    background: url('../img/library/icon_kakao.png') no-repeat center center;
+    background-size: contain;
+
+}
+.lib_exp .exp_1 a h5{
+    font-size: 1.5em;
+    color: #3c1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-left: 1px solid #3c1e1e; */
+}
+
+
+/* exp_2 */
+
+.lib_exp .exp_2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.lib_exp .exp_2 a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+.lib_exp .exp_2 a p{
+    display: inline-block;
+    margin-right: 10px;
+}
+.lib_exp .exp_2 a p img{
+    width: 100%;
+}
+.lib_exp .exp_2 a h3{
+    font-size: 1.5em;
+}
+
+
+/* exp_3 */
+
+.lib_exp .exp_3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.lib_exp .exp_3 h3{    
+    font-size: 2em;
+}
+.lib_exp .exp_3 a{
+    display: block;
+}
+.lib_exp .exp_3 a img{
+    width: 100%;
+}
+.lib_exp .exp_3 h5{
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    color: #454545;
+}
+.lib_exp .exp_3 > *{
+    margin: 10px 0;
+}
+
+
+/* lib_banner */
+
+.lib_banner a{
+    width: 100%;
+    display: inline-block;    
+    background: url('../img/library/banner_bg_01.png') no-repeat 100% center;
+    background-size: cover;
+}
+
+
+@media (min-width: 1250px){
+    
+    /* lib_shop */
+    .lib_shop{
+        width: 1250px;
+        margin: 0 auto; 
+    }
+    .lib_shop .shop_wrap{
+        display: flex;
+    }
+    .lib_shop .shop_wrap figure{
+        width: 618px;
+        margin-right: 144px;
+    }
+    .lib_shop .shop_wrap .shop_txt{
+        width: 618px;
+        margin: 0 16px; 
+    }
+    .lib_shop .shop_wrap .shop_bt a{
+        width: 230px;
+        line-height: 3;
+    }
+    .lib_shop .indi_ver{
+        width: 1250px;
+    }
+    .lib_shop .indi_ver{        
+        left: 50%; top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .lib_shop .indi_ver a{
+        margin: 10px 0;
+    }
+
+    
+    /* lib_list */
+
+    .lib_list .lib_slid_btn{
+        width: 1250px;
+        margin: 0 auto;        
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+    }
+    .before{
+        width: 50%;
+    }
+    .before img{
+        left: -8%;
+    }
+    .after{
+        width: 50%;    
+    }
+    .after img{
+        right: -8%;
+    }
+    .lib_list .lib_slid{
+        width: 1250px;    
+        margin: 0 auto;
+    }
+    .lib_list .lib_slid ul{        
+        display: flex;  
+        justify-content: space-between;
+    }
+    .lib_list .lib_slid ul .list_items{
+        width: 350px;     
+    }
+    .lib_list .lib_slid ul .list_items .list_img{
+        height: 350px;
+    }
+
+    /* lib_benefit */
+    .lib_benefit{
+        width: 1250px;
+        margin: 0 auto;
+        padding: 150px 0;
+    }
+    .lib_benefit li{
+        display: flex;
+        justify-content: space-between;
+    }
+    .lib_benefit li > p{
+        width: 250px;
+        height: 250px;
+        border-radius: 125px;
+        font-size: 2em;
+    }
+    .lib_benefit li div{
+        width: 934px;
+    }
+    .lib_benefit li div b{
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+    .lib_benefit li div p{
+        font-size: 1.3em;
+        line-height: 1.5;
+    }
+    
+    /* lib_exp */
+    .lib_exp{
+        width: 1250px;
+        margin: 0 auto;        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }    
+    .lib_exp .line{
+        width: 2px; height: 200px;  
+        background-color: #dedede;
+    }
+    
+    /* .exp_1 */
+
+    .lib_exp .exp_1{    
+        width: 350px; 
+    }
+    .lib_exp .exp_1 a{
+        width: 302px; height: 80px;
+    }
+    .lib_exp .exp_1 a span{
+        margin-left: 10px;
+        width: 80px;
+        height: 80px;
+
+    }
+    .lib_exp .exp_1 a h5{
+        width: 212px;
+    }
+
+
+    /* exp_2 */
+    .lib_exp .exp_2{
+        width: 506px;
+        padding-left: 30px;        
+        justify-content: space-between; 
+    }
+    .lib_exp .exp_2 a{
+        width: 200px;
+    }
+    .lib_exp .exp_2 a p{
+        width: 50px;
+        height: 50px;
+    }
+    .lib_exp .exp_2 a h3{
+        width: 140px;
+    }
+
+
+    /* exp_3 */
+    .lib_exp .exp_3{
+        width: 350px;
+    }
+    .lib_exp .exp_3 a{
+        width: 100px;
+    }
+    .lib_exp .exp_3 h5{
+        width: 300px;
+    }
+
+
+    /* lib_banner */
+    .lib_banner{
+        width: 1250px;
+        margin: 100px auto;
+        margin-bottom: 200px;
+    }
+    .lib_banner a{
+        padding: 70px 20px;
+    }
+    .lib_banner a p{
+        padding-left: 50px;
+        font-size: 1.5em;
+        line-height: 1.5;
+    }
+    .lib_banner a h2{
+        padding-left: 50px;
+        font-size: 2.5em;
+        line-height: 1.5;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1249px){
+    /* lib_shop */
+    .lib_shop{
+        width: 100%;
+        padding: 0 5%;
+    }
+    .lib_shop .shop_wrap{
+        display: flex;
+    }
+    .lib_shop .shop_wrap figure{
+        width: 48%;
+    }
+    .lib_shop .shop_wrap .shop_txt{
+        width: 48%;
+    }
+    .lib_shop .shop_wrap .shop_bt a{
+        width: 50%;
+        line-height: 3;
+    }
+    .lib_shop .indi_ver{
+        width: 95%;
+    }
+    .lib_shop .indi_ver{        
+        left: 50%; top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .lib_shop .indi_ver a{
+        margin: 10px 0;
+    }
+
+    /* lib_list */
+
+    .lib_list .lib_slid_btn{
+        width: 768px;         
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;      
+    }
+    .before{
+        width: 50%;
+    }
+    .before img{
+        left: 15%;
+    }
+    .after{
+        width: 50%;
+        display: none;    
+    }
+    .after img{
+        right: -8%;
+    }    
+    .lib_list .lib_slid{
+        width: 100%;    
+        padding-left: 15%;          
+    }
+    .lib_list .lib_slid ul{          
+        overflow: hidden;
+        display: flex;
+    }
+    .lib_list .lib_slid ul .list_items{
+        width: 45%; 
+        margin-right: 5%;  
+    }
+    .lib_list .lib_slid ul .list_items .list_img{
+        height: 350px;
+    }
+    
+    /* lib_benefit */
+    .lib_benefit{
+        width: 100%;
+        padding: 75px 5%;
+    }
+    .lib_benefit li{
+        display: flex;
+        justify-content: space-between;
+    }
+    .lib_benefit li > p{
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        font-size: 2em;
+    }
+    .lib_benefit li div{
+        width: 70%;
+    }
+    .lib_benefit li div b{
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+    .lib_benefit li div p{
+        font-size: 1em;
+        line-height: 1.5;
+    }
+    
+    /* lib_exp */
+    .lib_exp{
+        width: 100%;
+        padding: 0 5%;  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }       
+    .lib_exp .line{
+        width: 30%; height: 2px;   
+        background-color: #dedede;
+        margin: 50px;
+    }
+    
+    /* .exp_1 */
+
+    .lib_exp .exp_1{    
+        width: 100%; 
+    }
+    .lib_exp .exp_1 a{
+        width: 302px; height: 80px;
+    }
+    .lib_exp .exp_1 a span{
+        margin-left: 10px;
+        width: 80px;
+        height: 80px;
+
+    }
+    .lib_exp .exp_1 a h5{
+        width: 212px;
+    }
+
+
+    /* exp_2 */
+    .lib_exp .exp_2{
+        /* width: 80%; */
+        justify-content: center;
+    }
+    .lib_exp .exp_2 a{
+        width: 50%;
+        justify-content: space-around;
+    }
+    .lib_exp .exp_2 a p{
+        width: 50px;
+        height: 50px;
+    }
+    .lib_exp .exp_2 a h3{
+        width: 50%;
+        padding-left: 3%;
+    }
+
+
+    /* exp_3 */
+    .lib_exp .exp_3{
+        width: 100%;
+    }
+    .lib_exp .exp_3 a{
+        width: 100px;
+    }
+
+
+    /* lib_banner */
+
+    .lib_banner{
+        width: 90%;
+        margin: 100px auto;
+    }
+    .lib_banner a{
+        padding: 60px 0;
+    }
+    .lib_banner a p{
+        padding-left: 50px;
+        font-size: 1.2em;
+        line-height: 1.5;
+    }
+    .lib_banner a h2{
+        padding-left: 50px;
+        font-size: 2.2em;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 767px){
+    /* lib_shop */
+    .lib_shop{
+        width: 100%;
+        padding: 0px 5%;
+    }
+    .lib_shop .shop_wrap{
+        /* display: flex; */
+    }
+    .lib_shop .shop_wrap figure{
+        width: 100%;
+        height: 300px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .lib_shop .shop_wrap .shop_txt{
+        width: 100%;
+        text-align: center;
+    }
+    .lib_shop .shop_wrap .shop_bt{
+        justify-content: center;
+    }       
+    .lib_shop .indi_ver{        
+        left: 50%; bottom: -3%;
+        transform: translate(-50%, 0);
+        display: flex;
+        justify-content: space-around;
+    }
+    .lib_shop .indi_ver a{
+        margin: 0 20px;
+    }
+
+    /* lib_list */
+    .lib_list{
+        width: 100%;        
+    }
+    .lib_list ul{
+        width: 85%;
+        margin: 0 auto;
+    }
+    .lib_list ul .list_items{
+        width: 32%;        
+    }
+    .lib_list ul .list_items .list_img{
+        height: 250px;
+    }
+    .before{
+        left: -7%;
+    }
+    .after{
+        right: -7%;
+    }
+    
+       
+    /* lib_exp */
+    .lib_exp{
+        width: 100%;
+        padding: 0 5%;  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }       
+    .lib_exp .line{
+        width: 30%; height: 2px;   
+        background-color: #dedede;
+        margin: 50px;
+    }
+    
+    /* .exp_1 */
+
+    .lib_exp .exp_1{    
+        width: 100%; 
+    }
+    .lib_exp .exp_1 a{
+        width: 302px; height: 80px;
+    }
+    .lib_exp .exp_1 a span{
+        margin-left: 10px;
+        width: 80px;
+        height: 80px;
+
+    }
+    .lib_exp .exp_1 a h5{
+        width: 212px;
+    }
+
+    /* exp_3 */
+    .lib_exp .exp_3{
+        width: 100%;
+    }
+    .lib_exp .exp_3 a{
+        width: 100px;
+    }
+
+
+    /* lib_banner */
+
+    .lib_banner{
+        width: 90%;
+        margin: 100px auto;
+    }
+    .lib_banner a{
+        padding: 60px 0;
+    }
+    .lib_banner a p{
+        padding-left: 30px;
+        font-size: 1em;
+        line-height: 1.5;
+    }
+    .lib_banner a h2{
+        padding-left: 30px;
+        font-size: 2em;
+        line-height: 1.5;
+    }
+}
+
+@media (min-width: 573px) and (max-width:767px){
+    
+    .lib_shop .shop_wrap .shop_bt a{
+        width: 50%;
+        line-height: 3;
+    }    
+    /* lib_benefit */
+    .lib_benefit{
+        width: 100%;
+        padding: 75px 5%;
+    }
+    .lib_benefit li{
+        display: flex;
+        justify-content: space-around;
+    }
+    .lib_benefit li > p{
+        width: 180px;
+        height: 180px;
+        border-radius: 100px;
+        font-size: 1.5em;
+    }
+    .lib_benefit li div{
+        width: 65%;
+    }
+    .lib_benefit li div b{
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+    .lib_benefit li div p{
+        font-size: 1em;
+        line-height: 1.5;
+    }
+
+    /* exp_2 */
+    .lib_exp .exp_2{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .lib_exp .exp_2 a{
+        width: 50%;
+        justify-content: center;
+    }
+    .lib_exp .exp_2 a p{
+        width: 50px;
+        height: 50px;
+    }
+    .lib_exp .exp_2 a h3{
+        padding-left: 3%;
+    }
+    .lib_banner a{           
+        background:  url('../img/library/banner_bg_01.png') no-repeat 75% center;
+        background-size: cover;
+    }
+}
+@media (max-width: 572px){
+    .lib_shop .shop_wrap .shop_txt h3{
+        font-size: 2em;
+    }
+    .lib_shop .shop_wrap .shop_txt h5{
+        font-size: 1em;
+        text-decoration: line-through;
+    }
+    .lib_shop .shop_wrap .shop_txt h4{
+        font-size: 1.2em;
+    }
+    .lib_shop .shop_wrap .shop_bt{
+        display: block;
+    }
+    .lib_shop .shop_wrap .shop_bt a{
+        display: inline-block;
+        width: 100%;
+        line-height: 3;
+        margin: 0;
+        line-height: 2.5;
+        font-size: 1.3em;
+    }
+    .lib_list{       
+        margin-bottom: 100px;
+    }
+    /* lib_benefit */
+    .lib_benefit{
+        width: 100%;
+        padding: 0 5%;
+    }
+    .lib_benefit li{        
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-around; */
+    }
+    .lib_benefit li > p{
+        width: 180px;
+        height: 180px;
+        border-radius: 100px;
+        font-size: 1.5em;
+    }
+    .lib_benefit li div{
+        width: 90%;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .lib_benefit li div b{
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+    .lib_benefit li div p{
+        font-size: 1em;
+        line-height: 1.5;
+    }
+
+    /* exp_2 */
+    .lib_exp .exp_2{
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .lib_exp .exp_2 a{
+        width: 80%;
+        justify-content: center;
+    }
+    .lib_exp .exp_2 a p{
+        width: 50px;
+        height: 50px;
+    }
+    .lib_exp .exp_2 a h3{
+        padding-left: 3%;
+    }
+    .lib_banner a{           
+        background:  url('../img/library/banner_bg_01.png') no-repeat 75% center;
+        background-size: cover;
+    }
+    .lib_banner a *{        
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;  
+    }
+}

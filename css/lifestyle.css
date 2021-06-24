@@ -1,0 +1,182 @@
+/* lifestyle.css */
+
+/* title img */
+.title_top{
+    background: url('../img/lifestyle/title.jpg') no-repeat center center;    
+    background-size: cover;
+}
+
+/* tap menu */
+.life_tap{    
+    border-bottom: 1px solid #dedede;
+    width: 100%;
+}
+
+.nav_h .menu_list li:nth-child(1) > a{
+    background-color: #fdd000;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}    
+.life_tap ul{
+    display: flex;
+    justify-content: center;
+}
+.life_tap ul li{
+    line-height: 2;
+    font-size: 1em;
+    width: 144px;
+    display: inline-block;    
+}
+.life_tap ul li .tap_now{
+    background: url('../img/lifestyle/tap.jpg') no-repeat center center;
+    font-weight: 600;
+}
+
+
+/* img gallery */
+.life_gall{      
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.life_gall li{
+    margin-bottom: 50px;
+    background-color: #fff;
+    overflow: hidden;    
+    position: relative;
+}
+.life_gall li a::before{    
+    content: '';
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;      
+    left: 0; top: 0;  
+    position: absolute; 
+    z-index: 1; 
+}
+.life_gall li a h3{
+    position: absolute;
+    bottom: 0;
+    margin: 20px;
+    color: #fff;
+    font-size: 1.8em;
+    z-index: 2;
+}
+.life_gall li a img{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+}
+.life_gall li a:hover img{
+    transform: translate(-50%, -50%) scale(1.1) ;
+}
+.more{
+    display: flex;
+    justify-content: center;
+}
+.more a{
+    display: inline-block;
+    background-color: #454545;
+    color: #fff;
+    line-height: 3.5;
+    text-align: center;    
+    margin-bottom: 150px;
+    font-size: 1em;
+    text-transform: uppercase;    
+}
+@media (min-width:1250px){
+    .nav_h .menu_list li:nth-child(1) > a{
+        background-color: #fdd000;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+    }
+    /* tap menu */
+    .life_tap ul{
+        width: 1250px;
+        margin: 0 auto;
+    }
+
+    /* img gallery */
+    .life_gall{      
+        width: 1250px;
+        margin: 0 auto;
+    }
+    .life_gall li{
+        width: 30%;              
+        height: 500px;
+    }
+    .more{
+        width: 1250px;
+        margin: 0 auto;
+    }
+    .more a{
+        width: 30%;
+    }
+}
+@media (min-width:768px) and (max-width:1249px){  
+    .nav_h .menu_list li:nth-child(1) > a{
+        background-color: #fdd000;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+    }
+    /* tap menu */
+    .life_tap ul{
+        width: 100%;
+    }
+
+    /* img gallery */
+    .life_gall{      
+        width: 100%;
+        padding: 0 5%;
+    }
+    .life_gall li{
+        width: 47.5%;        
+        height: 400px;
+    }
+    .more{
+        width: 100%;
+    }
+    .more a{
+        width: 47.5%;
+    }
+}
+
+@media  (max-width:767px){  
+    .nav_h .menu_list li:nth-child(1) > a{
+        background-color: #fdd000;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+    }
+
+    /* tap menu */
+    .life_tap ul{
+        width: 100%;
+    }
+
+    .life_tap ul li{
+        text-align: center;
+        width: 25%;  
+    }
+
+    /* img gallery */
+    .life_gall{      
+        width: 100%;
+        padding: 0 5%;
+    }
+    .life_gall li{
+        width: 100%;
+        height: 350px;
+    }
+    .more{
+        width: 100%;
+    }
+    .more a{
+        width: 50%;
+    }
+}
