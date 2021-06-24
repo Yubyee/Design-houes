@@ -4,7 +4,7 @@
         position: relative;
     }
     main .con_01{
-        background: url('http://www.designhouse.co.kr/upload/contents/c57c87cdb403f7b050cf92445f06925e.jpg') no-repeat center 68% ;
+        background: url('../img/index/rolling_02.jpg') no-repeat center 68% ;
         background-size: cover;    
         position:absolute; left:0; top:0;
         width:100%; height:100%;
