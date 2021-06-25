@@ -39,9 +39,10 @@ section article{
 }
 .form article ul li input{    
     width: 100%;
-    height: 55px;
+    height: 50px;
     font-size: 1.2em;
     padding: 0 30px;
+    /* border: 1px solid #454545; */
 }
 .form article ul li .submit{
     background-color: #333;

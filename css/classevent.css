@@ -17,13 +17,6 @@
     background-size: cover;
 }
 
-/* callender */
-
-.cal{
-    margin-bottom: 80px;
-}
-
-
 /* cal table */
 
 .cal table{
@@ -71,26 +64,29 @@
 /* con_items */
 
 .con_items{
-    width: 100%;    
-    padding: 50px 0;  
-    padding-bottom: 100px;    
+    /* padding: 50px 0;   */
     position: relative;
 }
 .con_items .con_slid_btn{
     position: absolute;
     z-index: 99;
+    top: 50%;
 }
 .before{
     position: relative;
 }
 .before img{
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .after{ 
     position: relative;
 }
 .after img{
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .con_items .con_slid ul{    
     display: flex;
@@ -118,12 +114,11 @@
 .event{
     width: 100%;
     background-color: #eee;
+    margin-top: 100px;
+    padding-bottom: 100px;
 }
 
 /* evnet_con*/
-.event .event_con{   
-    margin-bottom: 100px;
-}
 .event .event_con ul{
     display: flex;
     flex-direction: column;
@@ -162,7 +157,8 @@
 
     .cal{
         width: 1250px;
-        margin: 0 auto;
+        margin: auto;
+        margin-bottom: 50px;
         display: flex;
         justify-content: space-between;
     }
@@ -170,7 +166,7 @@
     /* cal table */
 
     .cal table{
-        width: 618px;
+        width: 600px;
         line-height: 3;
         font-size: 1.1em;
     }
@@ -181,8 +177,7 @@
     /* call ul */
 
     .cal ul{
-        width: 618px;
-        padding: 0 70px;
+        width: 600px;
         line-height: 1;
     }
     .cal ul .cla_list_title{
@@ -196,9 +191,7 @@
     /* con_items */
 
     .con_items{
-        width: 100%;
-        padding-bottom: 100px;    
-        position: relative;
+        width: 100%; 
     }
     .con_items .con_slid_btn{
         width: 1250px;
@@ -237,13 +230,13 @@
     /* event */
     .event{
         width: 100%;
-        background-color: #eee;
+        background-color: #eee;        
     }
 
     /* evnet_con*/
     .event .event_con{
         width: 1250px;
-        margin: 0 auto;
+        margin: 100px auto;
         padding: 50px 100px;
         background-color: #fff;    
         display: flex;
@@ -268,13 +261,17 @@
         align-items: center;
     }
     .event .event_con .event_check > p{
-        width: 197px;
+        width: 197px;        
     }
     .event .event_con .event_check div{
         width: 283px;
     }
+    
     .event .event_con .event_check div a h3{
         font-size: 2em;
+    }
+    .event .event_con .event_check div a p{
+        display: none;
     }
     .event .event_con .event_check div h4{
         font-weight: 400;
@@ -288,6 +285,7 @@
     .cal{
         width: 100%;
         margin: 0 auto;
+        margin-bottom: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -326,8 +324,7 @@
     /* con_items */
 
     .con_items{
-        width: 100%;
-        padding-bottom: 100px;    
+        width: 100%;  
         position: relative;
     }
     .con_items .con_slid_btn{
@@ -359,7 +356,7 @@
         justify-content: space-between;
     }
     .con_items .con_slid ul .list_items{
-        width: 70%; 
+        width: 82.5%; 
         margin-right: 5%;         
         flex-shrink: 0;        
     }
@@ -380,7 +377,9 @@
     /* evnet_con*/
     .event .event_con{
         width: 70%;
+        background-color: #fff;  
         margin: 0 auto;
+        margin-top: 100px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -405,6 +404,7 @@
     }
     .event .event_con .event_check{
         width: 100%;
+        padding: 50px 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -412,6 +412,7 @@
     .event .event_con .event_check > p{
         width: 30%;
         margin-right: 5%;
+        
     }
     .event .event_con .event_check div{
         width: 45%;
@@ -430,6 +431,7 @@
     .cal{
         width: 100%;
         margin: 0 auto;
+        margin-bottom: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -468,8 +470,7 @@
     /* con_items */
 
     .con_items{
-        width: 100%;
-        padding-bottom: 100px;    
+        width: 100%;   
         position: relative;
     }
     .con_items .con_slid_btn{
@@ -522,7 +523,9 @@
     /* evnet_con*/
     .event .event_con{
         width: 70%;
-        margin: 0 auto;
+        background-color: #fff;
+        margin: auto;
+        margin-top: 100px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -535,6 +538,7 @@
     .event .event_con ul .event_list_title{
         font-weight: 700;
         font-size: 2em;    
+        letter-spacing: -2px;
         text-align: center;
         margin: 0 0 30px 0;
     }
@@ -547,6 +551,7 @@
     }
     .event .event_con .event_check{
         width: 100%;
+        padding: 50px 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -559,7 +564,8 @@
         width: 45%;
     }
     .event .event_con .event_check div a h3{
-        font-size: 2em;
+        font-size: 1.6em;
+        letter-spacing: -2px;
     }
     .event .event_con .event_check div h4{
         font-weight: 400;
@@ -573,6 +579,7 @@
     .cal{
         width: 100%;
         margin: 0 auto;
+        margin-bottom: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -615,8 +622,7 @@
     /* con_items */
 
     .con_items{
-        width: 100%;
-        padding-bottom: 100px;    
+        width: 100%; 
         position: relative;
     }
     .con_items .con_slid_btn{
@@ -629,7 +635,7 @@
         width: 50%;
     }
     .before img{
-        left: 10%;
+        left: 5%;
     }
     .after{ 
         width: 50%; 
@@ -640,7 +646,7 @@
     }
     .con_items .con_slid {
         width: 100%;
-        padding-left: 15%;
+        padding-left: 10.5%;
     }
     .con_items .con_slid ul{    
         overflow: hidden;
@@ -648,7 +654,7 @@
         justify-content: space-between;
     }
     .con_items .con_slid ul .list_items{
-        width: 85%; 
+        width: 89%; 
         margin-right: 5%;         
         flex-shrink: 0;        
     }
@@ -665,16 +671,18 @@
     /* event */
     .event{
         width: 100%;
-        /* background-color: #eee; */
     }
 
     /* evnet_con*/
     .event .event_con{
-        width: 80%;
+        width: 80%;        
+        background-color: #fff;
         margin: 0 auto;
+        margin-top: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0 5%;
     }
     .event .event_con ul{
         width: 100%;
@@ -699,6 +707,7 @@
     }
     .event .event_con .event_check{
         width: 100%;
+        padding: 50px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -712,7 +721,8 @@
         width: 90%;
     }
     .event .event_con .event_check div a h3{
-        font-size: 1.5em;
+        font-size: 1.8em;
+        letter-spacing: -1px;
     }
     .event .event_con .event_check div a p{
         width: 40px;

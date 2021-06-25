@@ -102,18 +102,23 @@
 .lib_list .lib_slid_btn{
     position: absolute;
     z-index: 99;
+    top: 50%;
 }
 .before{
     position: relative;
 }
 .before img{
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .after{ 
     position: relative;
 }
 .after img{
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .lib_list .lib_slid ul{
     width: 100%;
@@ -502,7 +507,7 @@
     /* lib_list */
 
     .lib_list .lib_slid_btn{
-        width: 768px;         
+        width: 100%;         
         top: 50%;
         transform: translateY(-50%);
         display: flex;      
@@ -752,7 +757,7 @@
     /* lib_list */
 
    .lib_list .lib_slid_btn{
-    width: 320px;         
+    width: 100%;         
     top: 50%;
     transform: translateY(-50%);
     display: flex;      
@@ -866,7 +871,7 @@
     }
 
    .lib_list .lib_slid_btn{
-    width: 320px;         
+    width: 100%;         
     top: 50%;
     transform: translateY(-50%);
     display: flex;      
@@ -875,7 +880,7 @@
         width: 50%;
     }
     .before img{
-        left: 15%;
+        left: 10%;
     }
     .after{
         width: 50%;
@@ -894,12 +899,13 @@
         justify-content: space-between;
     }
     .lib_list .lib_slid ul .list_items{
-        width: 80%; 
-        margin-right: 5%; 
+        width: 75%; 
+        margin-right: 10%; 
         flex-shrink: 0; 
-    }
+    }    
     .lib_list .lib_slid ul .list_items .list_img{
         height: 250px;
+        margin-bottom: 30px;
     }
 
 
@@ -923,6 +929,7 @@
         width: 90%;
         margin-top: 20px;
         margin-bottom: 50px;
+        padding: 0;
     }
     .lib_benefit li div b{
         font-size: 1.5em;
@@ -949,7 +956,7 @@
         height: 50px;
     }
     .lib_exp .exp_2 a h3{
-        padding-left: 3%;
+        padding: 0 3%;
     }
     .lib_banner a{           
         background:  url('../img/library/banner_bg_01.png') no-repeat 75% center;
