@@ -20,10 +20,6 @@
 /* callender */
 
 .cal{
-    width: 1250px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 80px;
 }
 
@@ -32,16 +28,12 @@
 
 .cal table{
     background-color: #eee;
-    border-radius: 50px;
-    width: 618px;
+    border-radius: 50px;    
     padding: 40px;
     padding-top: 10px;
     text-align: center;
-    line-height: 3;
-    font-size: 1.1em;
 }
 .cal table thead .cal_title{
-    font-size: 2.5em;
     text-transform: uppercase;
 }
 .cal table thead tr .sun{
@@ -58,26 +50,20 @@
 /* call ul */
 
 .cal ul{
-    width: 618px;
-    padding: 0 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     line-height: 1;
 }
-.cal ul h2{
-    font-size: 2.5em;    
+.cal ul .cla_list_title{
     margin: 10px 0 30px 0;
 }
-.cal ul li{
+.cal ul .cla_list{
     list-style: disc;
     list-style-position: inside;
     margin: 10px 0;
 }
-.cal ul li a{
-    font-size: 1em;
-}
-.cal ul li:hover{
+.cal ul .cla_list:hover{
     text-decoration: underline;
 }
 
@@ -85,54 +71,46 @@
 /* con_items */
 
 .con_items{
-    width: 100%;
+    width: 100%;    
     padding: 50px 0;  
+    padding-bottom: 100px;    
     position: relative;
-    padding-bottom: 100px;
 }
-.con_items ul{
-    width: 1250px;
-    margin: 0 auto;
+.con_items .con_slid_btn{
+    position: absolute;
+    z-index: 99;
+}
+.before{
+    position: relative;
+}
+.before img{
+    position: absolute;
+}
+.after{ 
+    position: relative;
+}
+.after img{
+    position: absolute;
+}
+.con_items .con_slid ul{    
     display: flex;
     justify-content: space-between;
     position: relative;
 }
-.con_items ul .list_items{
-    width: 600px;        
-}
-.con_items ul .list_items .list_img{
+.con_items .con_slid ul .list_items .list_img{
     border-radius: 0 0 0 50px;
-    height: 500px;
     margin-bottom: 50px;  
     overflow: hidden;
 }
-.con_items ul .list_items .list_img img{
+.con_items .con_slid ul .list_items .list_img img{
     width: 100%;    
     transition: 0.5s;
 }
-.con_items ul .list_items .list_name{
-    font-size: 2em;
+.con_items .con_slid ul .list_items .list_name{
     text-align: center;
-    line-height: 1.5;
 }
-.con_items ul .list_items .list_img:hover img{
+.con_items .con_slid ul .list_items .list_img:hover img{
     transform: scale(1.1) ;
-}
-.before{
-    color: #454545;
-    position: absolute;
-    top: 50%;
-    left: -10%;
-    transform: translateY(-50%);
-    display: inline-block;
-}
-.after{
-    color: #454545;
-    position: absolute;
-    top: 50%;
-    right: -10%;
-    transform: translateY(-50%);    
-    display: inline-block;
 }
 
 
@@ -143,61 +121,30 @@
 }
 
 /* evnet_con*/
-.event .event_con{
-    width: 1250px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 50px 100px;
-    display: flex;
-    justify-content: space-around;
+.event .event_con{   
     margin-bottom: 100px;
 }
 .event .event_con ul{
-    width: 509px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    line-height: 1;
 }
-.event .event_con ul h2{
-    font-size: 2em;    
-    margin: 10px 0 30px 0;
-}
-.event .event_con ul li{
+.event .event_con ul .event_list{
     list-style: disc;
     list-style-position: inside;
     margin: 10px 0;
 }
-.event .event_con ul li a{
-    font-size: 1em;
-}
-
-.event .event_con ul li:hover{
+.event .event_con ul .event_list:hover{
     text-decoration: underline;
-}
-.event .event_con .event_check{
-    width: 509px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.event .event_con .event_check > p{
-    width: 197px;
 }
 .event .event_con .event_check > p img{
     width: 100%;
-}
-.event .event_con .event_check div{
-    width: 283px;
 }
 .event .event_con .event_check div a{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
-}
-.event .event_con .event_check div a h3{
-    font-size: 2em;
 }
 .event .event_con .event_check div a p{
     width: 50px;
@@ -209,7 +156,571 @@
     align-items: center;
 
 }
-.event .event_con .event_check div h4{
-    font-weight: 400;
-    font-size: 1em;
+
+@media (min-width: 1250px){
+    /* callender */
+
+    .cal{
+        width: 1250px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* cal table */
+
+    .cal table{
+        width: 618px;
+        line-height: 3;
+        font-size: 1.1em;
+    }
+    .cal table thead .cal_title{
+        font-size: 2.5em;
+    }
+
+    /* call ul */
+
+    .cal ul{
+        width: 618px;
+        padding: 0 70px;
+        line-height: 1;
+    }
+    .cal ul .cla_list_title{
+        font-weight: 700;
+        font-size: 2.5em;    
+    }
+    .cal ul .cla_list a{
+        font-size: 1em;
+    }
+
+    /* con_items */
+
+    .con_items{
+        width: 100%;
+        padding-bottom: 100px;    
+        position: relative;
+    }
+    .con_items .con_slid_btn{
+        width: 1250px;
+        margin: 0 auto;        
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+    }
+    .before{
+        width: 50%;
+    }
+    .before img{
+        left: -15%;
+    }
+    .after{ 
+        width: 50%; 
+    }
+    .after img{
+        right: -15%;
+    }
+    .con_items .con_slid ul{    
+        width: 1250px;
+        margin: 0 auto;
+    }
+    .con_items .con_slid ul .list_items{
+        width: 600px;        
+    }
+    .con_items .con_slid ul .list_items .list_img{
+        height: 500px;
+    }
+    .con_items .con_slid ul .list_items .list_name{
+        font-size: 2em;
+        line-height: 1.5;
+    }
+
+    /* event */
+    .event{
+        width: 100%;
+        background-color: #eee;
+    }
+
+    /* evnet_con*/
+    .event .event_con{
+        width: 1250px;
+        margin: 0 auto;
+        padding: 50px 100px;
+        background-color: #fff;    
+        display: flex;
+        justify-content: space-around;
+    }
+    .event .event_con ul{
+        width: 509px;
+        line-height: 1;
+    }
+    .event .event_con ul .event_list_title{
+        margin: 10px 0 30px 0;
+        font-weight: 700;
+        font-size: 2em;    
+    }
+    .event .event_con ul .event_list a{
+        font-size: 1em;
+    }
+    .event .event_con .event_check{
+        width: 509px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .event .event_con .event_check > p{
+        width: 197px;
+    }
+    .event .event_con .event_check div{
+        width: 283px;
+    }
+    .event .event_con .event_check div a h3{
+        font-size: 2em;
+    }
+    .event .event_con .event_check div h4{
+        font-weight: 400;
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1249px){
+    /* callender */
+
+    .cal{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* cal table */
+
+    .cal table{
+        width: 90%;
+        line-height: 2.5;
+        font-size: 1.1em;
+        margin-bottom: 50px;
+    }
+    .cal table thead .cal_title{
+        font-size: 2.5em;
+    }
+
+    /* call ul */
+
+    .cal ul{
+        width: 70%;
+        line-height: 1;
+    }
+    .cal ul .cla_list_title{
+        font-weight: 700;
+        font-size: 2.5em;  
+        text-align: center;  
+    }
+    .cal ul .cla_list{
+        text-align: center;
+    }
+    .cal ul .cla_list a{
+        font-size: 1em;
+    }
+
+    /* con_items */
+
+    .con_items{
+        width: 100%;
+        padding-bottom: 100px;    
+        position: relative;
+    }
+    .con_items .con_slid_btn{
+        width: 100%;      
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+    }
+    .before{
+        width: 50%;
+    }
+    .before img{
+        left: 15%;
+    }
+    .after{ 
+        width: 50%; 
+        display: none;
+    }
+    .after img{
+        right: -15%;
+    }
+    .con_items .con_slid {
+        width: 100%;
+        padding-left: 15%;
+    }
+    .con_items .con_slid ul{    
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+    }
+    .con_items .con_slid ul .list_items{
+        width: 70%; 
+        margin-right: 5%;         
+        flex-shrink: 0;        
+    }
+    .con_items .con_slid ul .list_items .list_img{
+        height: 400px;
+    }
+    .con_items .con_slid ul .list_items .list_name{
+        font-size: 2em;
+        line-height: 1.5;
+    }
+
+    /* event */
+    .event{
+        width: 100%;
+        /* background-color: #eee; */
+    }
+
+    /* evnet_con*/
+    .event .event_con{
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .event .event_con ul{
+        width: 100%;
+        line-height: 1;
+        margin-bottom: 50px;
+    }
+    .event .event_con ul .event_list_title{
+        font-weight: 700;
+        font-size: 2em;    
+        text-align: center;
+        margin: 0 0 30px 0;
+    }
+    .event .event_con ul .event_list{
+        text-align: center;
+    }
+    .event .event_con ul .event_list a{
+        font-size: 1em;
+        text-align: center;
+    }
+    .event .event_con .event_check{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .event .event_con .event_check > p{
+        width: 30%;
+        margin-right: 5%;
+    }
+    .event .event_con .event_check div{
+        width: 45%;
+    }
+    .event .event_con .event_check div a h3{
+        font-size: 2em;
+    }
+    .event .event_con .event_check div h4{
+        font-weight: 400;
+        font-size: 1em;
+    }
+}
+@media (min-width: 573px) and (max-width:767px){
+    /* callender */
+
+    .cal{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* cal table */
+
+    .cal table{
+        width: 90%;
+        line-height: 2.5;
+        font-size: 1.1em;
+        margin-bottom: 50px;
+    }
+    .cal table thead .cal_title{
+        font-size: 2.5em;
+    }
+
+    /* call ul */
+
+    .cal ul{
+        width: 70%;
+        line-height: 1;
+    }
+    .cal ul .cla_list_title{
+        font-weight: 700;
+        font-size: 2.5em;  
+        text-align: center;  
+    }
+    .cal ul .cla_list{
+        text-align: center;
+    }
+    .cal ul .cla_list a{
+        font-size: 1em;
+    }
+
+    /* con_items */
+
+    .con_items{
+        width: 100%;
+        padding-bottom: 100px;    
+        position: relative;
+    }
+    .con_items .con_slid_btn{
+        width: 100%;      
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+    }
+    .before{
+        width: 50%;
+    }
+    .before img{
+        left: 15%;
+    }
+    .after{ 
+        width: 50%; 
+        display: none;
+    }
+    .after img{
+        right: -15%;
+    }
+    .con_items .con_slid {
+        width: 100%;
+        padding-left: 15%;
+    }
+    .con_items .con_slid ul{    
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+    }
+    .con_items .con_slid ul .list_items{
+        width: 70%; 
+        margin-right: 10%;         
+        flex-shrink: 0;        
+    }
+    .con_items .con_slid ul .list_items .list_img{
+        height: 300px;
+    }
+    .con_items .con_slid ul .list_items .list_name{
+        font-size: 1.5em;
+        line-height: 1.5;
+    }
+
+    /* event */
+    .event{
+        width: 100%;
+        /* background-color: #eee; */
+    }
+
+    /* evnet_con*/
+    .event .event_con{
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .event .event_con ul{
+        width: 100%;
+        line-height: 1;
+        margin-bottom: 50px;
+    }
+    .event .event_con ul .event_list_title{
+        font-weight: 700;
+        font-size: 2em;    
+        text-align: center;
+        margin: 0 0 30px 0;
+    }
+    .event .event_con ul .event_list{
+        text-align: center;
+    }
+    .event .event_con ul .event_list a{
+        font-size: 1em;
+        text-align: center;
+    }
+    .event .event_con .event_check{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .event .event_con .event_check > p{
+        width: 30%;
+        margin-right: 5%;
+    }
+    .event .event_con .event_check div{
+        width: 45%;
+    }
+    .event .event_con .event_check div a h3{
+        font-size: 2em;
+    }
+    .event .event_con .event_check div h4{
+        font-weight: 400;
+        font-size: 1em;
+    }
+}
+
+@media (max-width:572px){
+
+    /* callender */
+    .cal{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* cal table */
+    .cal table{
+        width: 90%;
+        line-height: 2;
+        font-size: 1em;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+    .cal table thead .cal_title{
+        font-size: 1.5em;
+    }
+
+    /* call ul */
+
+    .cal ul{
+        width: 80%;
+        line-height: 1;
+    }
+    .cal ul .cla_list_title{
+        font-weight: 600;
+        font-size: 2em;  
+        text-align: center;  
+        margin-bottom: 20px;
+    }
+    .cal ul .cla_list{
+        /* text-align: center; */        
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .cal ul .cla_list a{
+        font-size: 1em; 
+    }
+
+    /* con_items */
+
+    .con_items{
+        width: 100%;
+        padding-bottom: 100px;    
+        position: relative;
+    }
+    .con_items .con_slid_btn{
+        width: 100%;      
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+    }
+    .before{
+        width: 50%;
+    }
+    .before img{
+        left: 10%;
+    }
+    .after{ 
+        width: 50%; 
+        display: none;
+    }
+    .after img{
+        right: -15%;
+    }
+    .con_items .con_slid {
+        width: 100%;
+        padding-left: 15%;
+    }
+    .con_items .con_slid ul{    
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+    }
+    .con_items .con_slid ul .list_items{
+        width: 85%; 
+        margin-right: 5%;         
+        flex-shrink: 0;        
+    }
+    .con_items .con_slid ul .list_items .list_img{
+        height: 210px;
+        margin-bottom: 20px;
+    }
+    .con_items .con_slid ul .list_items .list_name{
+        font-size: 1.1em;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+
+    /* event */
+    .event{
+        width: 100%;
+        /* background-color: #eee; */
+    }
+
+    /* evnet_con*/
+    .event .event_con{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .event .event_con ul{
+        width: 100%;
+        line-height: 1;
+        margin-bottom: 40px;
+    }
+    .event .event_con ul .event_list_title{
+        font-weight: 600;
+        font-size: 2em;    
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
+    .event .event_con ul .event_list{
+        /* text-align: center; */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .event .event_con ul .event_list a{
+        font-size: 1em;
+        /* text-align: center; */
+    }
+    .event .event_con .event_check{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .event .event_con .event_check > p{
+        width: 50%;
+        margin-right: 5%;
+        margin-bottom: 20px;
+    }
+    .event .event_con .event_check div{
+        width: 90%;
+    }
+    .event .event_con .event_check div a h3{
+        font-size: 1.5em;
+    }
+    .event .event_con .event_check div a p{
+        width: 40px;
+        height: 40px;
+    
+    }
+    .event .event_con .event_check div h4{
+        font-weight: 400;
+        font-size: .8em;
+    }
 }

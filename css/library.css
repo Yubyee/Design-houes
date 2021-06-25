@@ -527,10 +527,12 @@
     .lib_list .lib_slid ul{          
         overflow: hidden;
         display: flex;
+        justify-content: space-between;
     }
     .lib_list .lib_slid ul .list_items{
-        width: 45%; 
-        margin-right: 5%;  
+        width: 50%; 
+        margin-right: 5%;         
+        flex-shrink: 0; 
     }
     .lib_list .lib_slid ul .list_items .list_img{
         height: 350px;
@@ -675,29 +677,8 @@
     }
     .lib_shop .indi_ver a{
         margin: 0 20px;
-    }
+    }   
 
-    /* lib_list */
-    .lib_list{
-        width: 100%;        
-    }
-    .lib_list ul{
-        width: 85%;
-        margin: 0 auto;
-    }
-    .lib_list ul .list_items{
-        width: 32%;        
-    }
-    .lib_list ul .list_items .list_img{
-        height: 250px;
-    }
-    .before{
-        left: -7%;
-    }
-    .after{
-        right: -7%;
-    }
-    
        
     /* lib_exp */
     .lib_exp{
@@ -766,7 +747,48 @@
     .lib_shop .shop_wrap .shop_bt a{
         width: 50%;
         line-height: 3;
+    } 
+    
+    /* lib_list */
+
+   .lib_list .lib_slid_btn{
+    width: 320px;         
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;      
+}
+    .before{
+        width: 50%;
+    }
+    .before img{
+        left: 25%;
+    }
+    .after{
+        width: 50%;
+        display: none;    
+    }
+    .after img{
+        right: -8%;
     }    
+    .lib_list .lib_slid{
+        width: 100%;    
+        padding-left: 15%;          
+    }
+    .lib_list .lib_slid ul{          
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+    }
+    .lib_list .lib_slid ul .list_items{
+        width: 50%; 
+        margin-right: 5%;  
+        flex-shrink: 0;
+    }
+    .lib_list .lib_slid ul .list_items .list_img{
+        height: 300px;
+    }
+
+
     /* lib_benefit */
     .lib_benefit{
         width: 100%;
@@ -836,10 +858,51 @@
         margin: 0;
         line-height: 2.5;
         font-size: 1.3em;
-    }
+    }    
+
+    /* lib_list */
     .lib_list{       
         margin-bottom: 100px;
     }
+
+   .lib_list .lib_slid_btn{
+    width: 320px;         
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;      
+}
+    .before{
+        width: 50%;
+    }
+    .before img{
+        left: 15%;
+    }
+    .after{
+        width: 50%;
+        display: none;    
+    }
+    .after img{
+        right: -8%;
+    }    
+    .lib_list .lib_slid{
+        width: 100%;    
+        padding-left: 15%;          
+    }
+    .lib_list .lib_slid ul{          
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+    }
+    .lib_list .lib_slid ul .list_items{
+        width: 80%; 
+        margin-right: 5%; 
+        flex-shrink: 0; 
+    }
+    .lib_list .lib_slid ul .list_items .list_img{
+        height: 250px;
+    }
+
+
     /* lib_benefit */
     .lib_benefit{
         width: 100%;
