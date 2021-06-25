@@ -638,7 +638,7 @@
         margin: 100px auto;
     }
     .lib_banner a{
-        padding: 60px 0;
+        padding: 60px;
     }
     .lib_banner a p{
         padding-left: 50px;
@@ -744,6 +744,7 @@
         padding-left: 30px;
         font-size: 2em;
         line-height: 1.5;
+        width: 95%;
     }
 }
 
@@ -837,6 +838,8 @@
     .lib_exp .exp_2 a h3{
         padding-left: 3%;
     }
+
+    /* lib_banner */
     .lib_banner a{           
         background:  url('../img/library/banner_bg_01.png') no-repeat 75% center;
         background-size: cover;
@@ -958,6 +961,8 @@
     .lib_exp .exp_2 a h3{
         padding: 0 3%;
     }
+
+    /* lib_banner */
     .lib_banner a{           
         background:  url('../img/library/banner_bg_01.png') no-repeat 75% center;
         background-size: cover;
