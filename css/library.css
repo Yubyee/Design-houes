@@ -132,10 +132,11 @@
     width: 100%;    
     transition: 0.5s;
 }
-.lib_list .lib_slid ul .list_items .list_name{
+.lib_list .lib_slid ul .list_items h3{
     font-size: 1.5em;
     text-align: center;
     line-height: 1;
+    font-weight: 400;
 }
 .lib_list .lib_slid ul .list_items .list_img:hover img{
     transform: scale(1.1) ;
@@ -162,7 +163,6 @@
     text-align: center;
 }
 .lib_benefit li div{
-    display: inline-block;
     padding-left: 20px;
     display: flex;
     flex-direction: column;

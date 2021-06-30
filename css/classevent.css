@@ -102,7 +102,7 @@
     width: 100%;    
     transition: 0.5s;
 }
-.con_items .con_slid ul .list_items .list_name{
+.con_items .con_slid ul .list_items h3{
     text-align: center;
 }
 .con_items .con_slid ul .list_items .list_img:hover img{
@@ -222,7 +222,7 @@
     .con_items .con_slid ul .list_items .list_img{
         height: 500px;
     }
-    .con_items .con_slid ul .list_items .list_name{
+    .con_items .con_slid ul .list_items h3{
         font-size: 2em;
         line-height: 1.5;
     }
@@ -363,7 +363,7 @@
     .con_items .con_slid ul .list_items .list_img{
         height: 400px;
     }
-    .con_items .con_slid ul .list_items .list_name{
+    .con_items .con_slid ul .list_items h3{
         font-size: 2em;
         line-height: 1.5;
     }
@@ -509,7 +509,7 @@
     .con_items .con_slid ul .list_items .list_img{
         height: 300px;
     }
-    .con_items .con_slid ul .list_items .list_name{
+    .con_items .con_slid ul .list_items h3{
         font-size: 1.5em;
         line-height: 1.5;
     }
@@ -662,7 +662,7 @@
         height: 210px;
         margin-bottom: 20px;
     }
-    .con_items .con_slid ul .list_items .list_name{
+    .con_items .con_slid ul .list_items h3{
         font-size: 1.1em;
         font-weight: 600;
         line-height: 1.5;
