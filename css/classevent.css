@@ -19,27 +19,40 @@
 
 /* cal table */
 
-.cal table{
+.cal_table{
     background-color: #eee;
     border-radius: 50px;    
     padding: 40px;
     padding-top: 10px;
     text-align: center;
 }
-.cal table thead .cal_title{
+.cal_table .cal_table_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 30px 0;
+}
+.cal_table .cal_table_title a{
+    margin: 0 20px;
+}
+.cal_table .cal_table_title h2{
     text-transform: uppercase;
 }
-.cal table thead tr .sun{
+.cal_table table{
+    width: 100%;
+    line-height: 3;
+}
+.cal_table table thead tr .sun{
     color: red;
 }
-.cal table thead tr .sat{
+.cal_table table thead tr .sat{
     color: blue;
 }
 .cal_point {
     background: url('../img/classevent/point_s.png') no-repeat center center;
     /* background-size: 100%; */
 }
-
 /* call ul */
 
 .cal ul{
@@ -153,6 +166,15 @@
 }
 
 @media (min-width: 1250px){
+
+    .cal_table{
+        width: 600px;
+    }
+    .cal_table .cal_table_title h2{
+        font-size: 2.5em;
+    }
+
+    
     /* callender */
 
     .cal{
@@ -163,16 +185,6 @@
         justify-content: space-between;
     }
 
-    /* cal table */
-
-    .cal table{
-        width: 600px;
-        line-height: 3;
-        font-size: 1.1em;
-    }
-    .cal table thead .cal_title{
-        font-size: 2.5em;
-    }
 
     /* call ul */
 
@@ -186,7 +198,8 @@
     }
     .cal ul .cla_list a{
         font-size: 1em;
-    }
+}
+
 
     /* con_items */
 
@@ -290,16 +303,11 @@
         flex-direction: column;
         align-items: center;
     }
-
-    /* cal table */
-
-    .cal table{
-        width: 90%;
-        line-height: 2.5;
-        font-size: 1.1em;
+    .cal_table{
         margin-bottom: 50px;
+        width: 70%;
     }
-    .cal table thead .cal_title{
+    .cal_table .cal_table_title h2{
         font-size: 2.5em;
     }
 
@@ -436,18 +444,14 @@
         flex-direction: column;
         align-items: center;
     }
-
-    /* cal table */
-
-    .cal table{
-        width: 90%;
-        line-height: 2.5;
-        font-size: 1.1em;
+    .cal_table{
         margin-bottom: 50px;
+        width: 70%;
     }
-    .cal table thead .cal_title{
+    .cal_table .cal_table_title h2{
         font-size: 2.5em;
     }
+
 
     /* call ul */
 
@@ -584,16 +588,11 @@
         flex-direction: column;
         align-items: center;
     }
-
-    /* cal table */
-    .cal table{
-        width: 90%;
-        line-height: 2;
-        font-size: 1em;
-        margin-bottom: 30px;
-        padding: 20px;
+    .cal_table{
+        margin-bottom: 50px;
+        width: 80%;
     }
-    .cal table thead .cal_title{
+    .cal_table .cal_table_title h2{
         font-size: 1.5em;
     }
 
