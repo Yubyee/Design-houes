@@ -25,23 +25,23 @@
     padding: 40px;
     padding-top: 10px;
     text-align: center;
+    position: relative;
 }
 .cal_table .cal_table_title{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: 30px 0;
-}
-.cal_table .cal_table_title a{
-    margin: 0 20px;
-}
-.cal_table .cal_table_title h2{
-    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .cal_table table{
     width: 100%;
     line-height: 3;
+}
+.cal_table table caption{
+    text-transform: uppercase;
 }
 .cal_table table thead tr .sun{
     color: red;
@@ -166,15 +166,6 @@
 }
 
 @media (min-width: 1250px){
-
-    .cal_table{
-        width: 600px;
-    }
-    .cal_table .cal_table_title h2{
-        font-size: 2.5em;
-    }
-
-    
     /* callender */
 
     .cal{
@@ -184,8 +175,17 @@
         display: flex;
         justify-content: space-between;
     }
-
-
+    .cal_table{
+        width: 600px;
+    }
+    .cal_table table caption{
+        font-size: 2.5em;
+    }
+    .cal_table .cal_table_title{
+        padding: 0 65px;
+        top: 60px;
+    }  
+    
     /* call ul */
 
     .cal ul{
@@ -307,9 +307,14 @@
         margin-bottom: 50px;
         width: 70%;
     }
-    .cal_table .cal_table_title h2{
+    .cal_table .cal_table_title{
+        padding: 0 15%;
+        top: 60px;
+    }
+    .cal_table table caption{
         font-size: 2.5em;
     }
+    
 
     /* call ul */
 
@@ -365,7 +370,7 @@
     }
     .con_items .con_slid ul .list_items{
         width: 82.5%; 
-        margin-right: 5%;         
+        margin-right: 3%;         
         flex-shrink: 0;        
     }
     .con_items .con_slid ul .list_items .list_img{
@@ -448,7 +453,11 @@
         margin-bottom: 50px;
         width: 70%;
     }
-    .cal_table .cal_table_title h2{
+    .cal_table .cal_table_title{
+        padding: 0 15%;
+        top: 60px;
+    }
+    .cal_table table caption{
         font-size: 2.5em;
     }
 
@@ -506,8 +515,8 @@
         justify-content: space-between;
     }
     .con_items .con_slid ul .list_items{
-        width: 70%; 
-        margin-right: 10%;         
+        width: 82%; 
+        margin-right: 5%;         
         flex-shrink: 0;        
     }
     .con_items .con_slid ul .list_items .list_img{
@@ -592,7 +601,11 @@
         margin-bottom: 50px;
         width: 80%;
     }
-    .cal_table .cal_table_title h2{
+    .cal_table .cal_table_title{
+        padding: 0 10%;
+        top: 38px;
+    }
+    .cal_table table caption{
         font-size: 1.5em;
     }
 
@@ -645,7 +658,7 @@
     }
     .con_items .con_slid {
         width: 100%;
-        padding-left: 10.5%;
+        padding-left: 10%;
     }
     .con_items .con_slid ul{    
         overflow: hidden;
@@ -653,7 +666,7 @@
         justify-content: space-between;
     }
     .con_items .con_slid ul .list_items{
-        width: 89%; 
+        width: 88%; 
         margin-right: 5%;         
         flex-shrink: 0;        
     }
