@@ -204,7 +204,7 @@
     font-size: 1.5em;
     font-weight: 400;
 }
-.lib_exp .exp_1 a{
+.lib_exp .exp_1 > a{
     background-color: #f9e000;
     display: flex;
     justify-content: space-between;
