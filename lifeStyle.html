@@ -72,9 +72,9 @@
         <div class="title_top">
             <h2>life style</h2>
         </div>        
-        <div class="life_tap">
+        <div class="life_tab">
             <ul>
-                <li ><a class="tap_now" href="#">Design</a></li>
+                <li><a  href="#">Design</a></li>
                 <li><a href="#">Living</a></li>
                 <li><a href="#">Style</a></li>
                 <li><a href="#">Culture</a></li>
@@ -160,5 +160,21 @@
             <p>Copyright ⓒ 2021 Yubyee Jang All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        const lifeTab = document.querySelectorAll('.life_tab ul li');
+        for(let i=0; i<lifeTab.length; i++){            
+            lifeTab[i].addEventListener('click', function(){
+                for(let j=0; j<lifeTab.length; j++){
+                    lifeTab[j].classList.remove('tab_now');
+                }
+                lifeTab[i].classList.add('tab_now');
+                console.log(lifeTab);
+            });
+        }
+
+
+    </script>
+
 </body>
 </html>

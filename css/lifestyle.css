@@ -8,8 +8,8 @@
     background-size: cover;
 }
 
-/* tap menu */
-.life_tap{    
+/* tab menu */
+.life_tab{    
     border-bottom: 1px solid #dedede;
     width: 100%;
 }
@@ -20,18 +20,19 @@
     height: 100%;
     display: inline-block;
 }    
-.life_tap ul{
+.life_tab ul{
     display: flex;
     justify-content: center;
 }
-.life_tap ul li{
+.life_tab ul li{
     line-height: 2;
     font-size: 1em;
     width: 144px;
-    display: inline-block;    
+    display: inline-block;  
+    text-align: center;  
 }
-.life_tap ul li .tap_now{
-    background: url('../img/lifestyle/tap.jpg') no-repeat center center;
+.life_tab ul li.tab_now{
+    background: rgba(225, 208, 0, 0.5);
     font-weight: 600;
 }
 
@@ -96,8 +97,8 @@
         height: 100%;
         display: inline-block;
     }
-    /* tap menu */
-    .life_tap ul{
+    /* tab menu */
+    .life_tab ul{
         width: 1250px;
         margin: 0 auto;
     }
@@ -126,8 +127,8 @@
         height: 100%;
         display: inline-block;
     }
-    /* tap menu */
-    .life_tap ul{
+    /* tab menu */
+    .life_tab ul{
         width: 100%;
     }
 
@@ -156,12 +157,12 @@
         display: inline-block;
     }
 
-    /* tap menu */
-    .life_tap ul{
+    /* tab menu */
+    .life_tab ul{
         width: 100%;
     }
 
-    .life_tap ul li{
+    .life_tab ul li{
         text-align: center;
         width: 25%;  
     }
