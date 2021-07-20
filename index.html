@@ -6,55 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design House</title>
     <link href="css/common.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">  
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="js/slick.min.js" type="text/javascript" charset="utf-8"></script>   
+    <script src="js/common.js"></script> 
+    <script src="js/index.js"></script>
+
 </head>
 <body>
-    <header>
-        <div class="menu_h">
-            <a href="index.html"><img src="img/common/logo_designhouse.png" alt="로고"></a>
-            <ul>
-                <li class="search">
-                    <input type="search">
-                </li>
-                <li class="login">
-                    <a href="login.html"><img src="img/common/login.png" alt="로그인"></a>
-                </li>
-            </ul>
-        </div>
-        <nav class="nav_h">
-            <ul class="menu_list">
-                <li>
-                    <a href="lifeStyle.html">Life Style</a>
-                    <p>
-                        <a href="#">Design</a>
-                        <a href="#">Living</a>
-                        <a href="#">Style</a>
-                        <a href="#">Culture</a>
-                    </p>
-                </li>
-                <li>
-                    <a href="library.html">Library</a>
-                    <p class="fake">0</p>
-                </li>
-                <li>
-                    <a href="classevent.html">Class&Event</a>
-                    <p>
-                        <a href="#">Class Calender</a>
-                        <a href="#">Event</a>
-                    </p>
-                </li>
-                <li>
-                    <a href="search.html">Search</a>
-                    <p class="fake">0</p>
-                </li>
-            </ul>              
-        </nav>        
-    </header>
+    <header></header>
     <main>
-        <div class="slide">
-            <div class="con_01">
-                <div>
-                    <a href="#">
+        <section class="slide slider">
+            <div class="con"> <!-- width 100% 롤링 박스-->    
+                <img src="img/index/rolling_01.jpg">            
+                <div> <!-- width 1250px 박스-->
+                    <a href="#"> <!-- width 1250px 텍스트 박스-->
                         <h2>
                             <span>BY THE SEA</span>
                         </h2>                    
@@ -68,48 +35,76 @@
                     </a>                    
                 </div>                
             </div>
-        </div>        
-        <div class="index_indicator"> 
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-        </div>   
-    </main>  
-    
-    <footer>
-        <nav class="nav_f">
-            <ul>
-                <li><a href="#">광고문의</a></li>
-                <li><a href="#">서비스이용약관</a></li>
-                <li><a href="#">개인정보처리방침</a></li>
-                <!-- <li><a href="#">고객센터</a></li> -->
-                <li>
-                    <select>
-                        <option><a href="#">월간디자인</a></option>
-                        <option><a href="#">행복이 가득한 집</a></option>
-                        <option><a href="#">럭셔리</a></option>
-                        <option><a href="#">서울리빙디자인페어</a></option>
-                        <option><a href="#">인천리빙디자인페어</a></option>
-                        <option><a href="#">서울디자인페스티벌</a></option>
-                        <option><a href="#">크리에이터스그라운드</a></option>
-                    </select>
-                </li>
-            </ul>
-        </nav>
-        <div>
-            <ul>
-                <li>서울시 중구 동호로  272 (주)디자인하우스</li>
-                <li>|</li>
-                <li>대표자 이영혜</li>
-                <li>|</li>
-                <li>사업자 등록번호 203-81-43529</li>
-                <li>|</li>
-                <li>전화번호 02) 2275-6151</li>
-            </ul>                
-            <p>Copyright ⓒ 2021 Yubyee Jang All rights reserved.</p>
-        </div>
-    </footer>
+            <div class="con">
+                <img src="img/index/rolling_02.jpg">
+                <div>
+                    <a href="#">
+                        <h2>
+                            <span>오리지널 가구를 사는 합리적 방법</span>
+                        </h2>                    
+                        <p>
+                            <span>디자인과 품질 좋은 가구의 가치가 나날이 높아지고 있다.<br>
+                                마음에 드는 가구를 월 분납으로 가볍게 소유하는 법, 가구 큐레이션 플랫폼 ‘로마드’를 주목해보자. </span>
+                        </p>
+                        <h5>
+                            <span>view more +</span>
+                        </h5>
+                    </a>                    
+                </div>                
+            </div>
+            <div class="con">
+                <img src="img/index/rolling_03.jpg">
+                <div>
+                    <a href="#">
+                        <h2>
+                            <span>하루를 마무리하는 습관</span>
+                        </h2>                    
+                        <p>
+                            <span>끈적이거나 남는 느낌 없이 전신을 깨끗하게 하는 동시에<br>
+                                감각적인 향을 남기는 핸드 & 보디 워시를 모았다. </span>
+                        </p>
+                        <h5>
+                            <span>view more +</span>
+                        </h5>
+                    </a>                    
+                </div>                
+            </div>
+            <div class="con">
+                <img src="img/index/rolling_04.jpg">
+                <div>
+                    <a href="#">
+                        <h2>
+                            <span>커피&디저트 클럽</span>
+                        </h2>                    
+                        <p>
+                            <span>단맛과 쓴맛은 훨씬 더 다양한 단맛과 쓴맛으로 분화하고 재조립되며<br>
+                                F&B 지형에 활력을 불어넣고 있다. </span>
+                        </p>
+                        <h5>
+                            <span>view more +</span>
+                        </h5>
+                    </a>                    
+                </div>                
+            </div>
+            <div class="con">
+                <img src="img/index/rolling_05.jpg">
+                <div>
+                    <a href="#">
+                        <h2>
+                            <span>고급 레스토랑이 집으로!</span>
+                        </h2>                    
+                        <p>
+                            <span>집에서 모든 것을 경험할 수 있는 지금,<br>
+                                파인다이닝도 예외는 아니다.</span>
+                        </p>
+                        <h5>
+                            <span>view more +</span>
+                        </h5>
+                    </a>                    
+                </div>                
+            </div>
+        </section>        
+    </main>      
+    <footer></footer>
 </body>
 </html>
