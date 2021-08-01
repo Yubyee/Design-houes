@@ -1,0 +1,214 @@
+/* ligin.css */
+
+main{
+    position: relative;
+}
+.container{
+    margin: 0 auto;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;    
+    overflow: hidden;
+    border: 5px solid #fdd000;
+}
+.container .formBox, .clickBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+.bgColor{
+    background-color: #fdd000;
+}
+/* formBox */
+.container .formBox h2{
+    font-size: 2.5em;
+    text-transform: uppercase;
+    text-align: center;    
+    letter-spacing: -2px;
+}
+.container .formBox ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .formBox ul li{
+    margin: 10px 0;
+}
+.container .formBox ul li input{    
+    width: 100%;
+    height: 50px;
+    font-size: 1.2em;
+    padding: 0 30px;
+    border: 1px solid #454545;
+}
+.container .formBox ul li .submit{
+    background-color: #333;
+    color: #fff;
+}
+.container .formBox ul .log_search{
+    text-align: center;
+    margin-top: 10px;
+}
+.container .formBox ul .log_icon{
+    text-align: center;
+}
+.container .formBox ul .log_icon a{
+    display: inline-block;
+}
+.container .formBox ul .log_icon .kakao{
+    background: url('../img/login/icon_kakao.png') no-repeat center center;
+    background-size: contain;
+}
+.container .formBox ul .log_icon .google{
+    background: url('../img/login/icon_google.png') no-repeat center center;
+    background-size: contain;
+}
+.container .formBox ul .log_icon .naver{
+    background: url('../img/login/icon_naver.png') no-repeat center center;
+    background-size: contain;
+}
+
+
+
+/* clickBox */
+.container .clickBox{
+    display: flex;
+    align-items: center;
+}
+.container .clickBox h2{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 15px;
+    letter-spacing: -2px;
+}
+.container .clickBox button{
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    border-radius: 50px;    
+    display: inline-block;      
+    letter-spacing: -2px;
+}
+.container .clickBox .click_r{
+    padding-right: 4%;
+    background: url('../img/next_r.png') no-repeat 86% center;
+    background-color: #fff;
+}
+.container .clickBox .click_l{
+    padding-right: 4%;
+    background: url('../img/next_r.png') no-repeat 86% center;
+    background-color: #fff;
+}
+
+
+@media (min-width: 1250px){
+    .container{
+        width: 1250px;         
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+    }
+    .container .formBox h2{
+        margin-bottom: 30px;
+    }
+    .container .formBox ul li{
+        width: 400px;
+        margin: 10px 0;
+    }
+    .container .formBox ul .log_icon a{
+        display: inline-block;
+        width: 60px; height: 60px;
+        border-radius: 30px; 
+        margin:0 20px;
+    }
+    .container .clickBox h2{
+        font-size: 3em;
+    }
+    .container .clickBox button{
+        font-size: 2.5em;
+        width: 280px;
+        line-height: 1.9;
+    }
+    .container .formBox, .clickBox{
+        height: 600px;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 1249px){
+    .container{
+        width: 90%;             
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+    }
+    .container .formBox h2{
+        margin-bottom: 10px;
+    }
+    .container .formBox ul li{
+        width: 70%;
+        margin: 5px 0;
+    }
+    .container .formBox ul .log_icon a{
+        display: inline-block;
+        width: 50px; height: 50px;
+        border-radius: 25px; 
+        margin:0 10px;
+    }
+    .container .clickBox h2{
+        font-size: 3em;
+    }
+    .container .clickBox button{
+        font-size: 2.3em;
+        width: 250px;
+        line-height: 1.8;
+    }
+    .container .formBox, .clickBox{
+        height: 500px;
+    }
+}
+@media (max-width: 767px){
+    .container{
+        width: 90%;             
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+    }
+    .container .formBox h2{
+        margin-bottom: 10px;
+    }
+    .container .formBox ul li{
+        width: 70%;
+        margin: 5px 0;
+    }
+    .container .formBox ul .log_icon a{
+        display: inline-block;
+        width: 40px; height: 40px;
+        border-radius: 20px; 
+        margin:0 5px;
+    }
+    .container .clickBox h2{
+        font-size: 2em;
+    }
+    .container .clickBox button{
+        font-size: 1.7em;
+        width: 220px;
+        line-height: 2;
+    }
+    .container .formBox{
+        height: 400px; width: 100%;
+    }
+    .container .clickBox{
+        height: 150px; width: 100%;
+    }
+}
+
+
+.container02{
+    display: none;
+}

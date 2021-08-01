@@ -1,0 +1,59 @@
+{
+    "subscribeNow":[
+        {
+            "title":"행복이 가득한 집",
+            "img":"img/library/book_01.jpg",
+            "normalPrice": "19,5000",
+            "salePrice":"120,000",
+            "reSubscribe":"108,000",
+            "tag":"39% OFF"           
+        },
+        {
+            "title":"스토리샵",
+            "img":"img/library/book_02.jpg",
+            "normalPrice": "69,150",
+            "salePrice":"59,000",
+            "reSubscribe":"59,000",
+            "tag":"15% OFF"
+        },
+        {
+            "title":"월간 디자인",
+            "img":"img/library/book_03.jpg",
+            "normalPrice": "205,000",
+            "salePrice":"144,000",
+            "reSubscribe":"120,000",
+            "tag":"30% OFF"
+        },
+        {
+            "title":"럭셔리",
+            "img":"img/library/book_04.jpg",
+            "normalPrice": "118,000",
+            "salePrice":"84,000",
+            "reSubscribe":"84,000",
+            "tag":"30% OFF"
+        }
+    ],
+    "bookList":[
+        {
+            "title":"디자인",
+            "img":"img/library/book_list_01.jpg"
+        },
+        {
+            "title":"행복이 가득한 집",
+            "img":"img/library/book_list_02.jpg"
+        },
+        {
+            "title":"마이 웨딩",
+            "img":"img/library/book_list_03.jpg"
+        },
+        {
+            "title":"맘&앙팡",
+            "img":"img/library/book_list_04.jpg"
+        },
+        {
+            "title":"럭셔리",
+            "img":"img/library/book_list_05.jpg"
+        }
+    ]
+}
+

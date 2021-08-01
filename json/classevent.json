@@ -1,0 +1,65 @@
+{
+    "class":[
+        {
+            "month":"8",
+            "date":"2",
+            "title":"유리 공예가 양유완의 물방울 유리 문진 만들기",
+            "title2":"유리 공예가 양유완의<br>물방울 유리 문진 만들기",
+            "img":"img/classevent/class_01.jpg"
+        },
+        {
+            "month":"8",
+            "date":"3",
+            "title":"문은영 작가와 함께하는 수틀을 활용한 민화 그리기",
+            "title2":"문은영 작가와 함께하는<br>수틀을 활용한 민화 그리기",
+            "img":"img/classevent/class_02.jpg"
+        },
+        {
+            "month":"8",
+            "date":"10",
+            "title":"윤주당과 함께하는 이화주 담그기",
+            "title2":"윤주당과 함께하는<br>이화주 담그기",
+            "img":"img/classevent/class_03.jpg"
+        },
+        {
+            "month":"8",
+            "date":"23",
+            "title":"화소반&블뤼테 오픈 하우스와 플라워 클래스",
+            "title2":"화소반&블뤼테<br>오픈 하우스와 플라워 클래스",
+            "img":"img/classevent/class_04.jpg"
+        },
+        {
+            "month":"8",
+            "date":"24",
+            "title":"숍 탐방+클래스-플라워 숍 라마라마",
+            "title2":"숍 탐방+클래스<br>플라워 숍 라마라마",
+            "img":"img/classevent/class_05.jpg"
+        }
+    ],
+    "event":[
+        {
+            "period":"2021.07.26 - 2021.08.04",
+            "title":"인사이트 디자인 토크",
+            "title2":"인사이트<br>디자인 토크",
+            "img":"img/classevent/event_01.jpg"
+        },
+        {
+            "period":"2021.07.21 - 2021.08.17",
+            "title":"작가와의 만남-화가 김호연",
+            "title2":"작가와의 만남<br>화가 김호연",
+            "img":"img/classevent/event_02.jpg"
+        },
+        {
+            "period":"2021.02.23 - 2021.12.31",
+            "title":"45주년 DH 멤버십 이벤트",
+            "title2":"45주년 DH<br>멤버십 이벤트",
+            "img":"img/classevent/event_03.jpg"
+        },
+        {
+            "period":"2021.07.21 - 2021.08.31",
+            "title":"오뚜기와 함께 차린 제철 재료 집밥",
+            "title2":"오뚜기와 함께 차린<br>제철 재료 집밥",
+            "img":"img/classevent/event_04.jpg"
+        }
+    ]
+}

@@ -21,8 +21,10 @@
     <link href="css/common.css" rel="stylesheet">
     <link href="css/library.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-    <script src="js/slick.min.js" type="text/javascript" charset="utf-8"></script>   
+    <script src="js/slick.min.js" type="text/javascript" charset="utf-8"></script> 
+    <link rel="stylesheet" type="text/css" href="css/slick.css">  
     <script src="js/common.js"></script> 
+    <script src="js/library.js"></script>
 
 </head>
 <body>
@@ -35,42 +37,30 @@
             <h2 class="title_sub"> Subscribe now</h2>
         </div>        
         <section class="lib_shop">
-            <div class="shop_wrap">
-                <figure>
-                    <img src="img/library/book_01.jpg" alt="스토리샵">
-                    <figcaption><b>15% off</b></figcaption>
-                </figure>            
-                <div class="shop_txt">               
-                    <h3>스토리샵</h3>
-                    <h5>정상가 69,150원</h6>
-                    <h4>할인가</h4>
-                    <h3>59,000원</h3>
-                    <div class="shop_bt">
-                        <a href="#">월 구독</a>
-                        <a href="#"><b>1년 정기 구독</b></a>                    
-                    </div>    
-                </div> 
-            </div>            
-            <div class="indi_ver">
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-            </div>
+            <ul class="shop_wrap slider">
+                <!--<li>
+                    <figure>
+                        <img src="img/library/book_01.jpg" alt="스토리샵">
+                        <figcaption><b>15% off</b></figcaption>
+                    </figure>            
+                    <div class="shop_txt">               
+                        <h3>스토리샵</h3>
+                        <h5>정상가 69,150원</h5>
+                        <h4>할인가</h4>
+                        <h3>59,000원</h3>
+                        <h6>재구독 할인가 59,000원</h6>
+                        <div class="shop_bt">
+                            <a href="#">월 구독</a>
+                            <a href="#"><b>1년 정기 구독</b></a>                    
+                        </div>    
+                    </div>
+                </li> -->
+            </ul>
         </section>
-        <section class="lib_list">
-            <div class="lib_slid_btn">
-                <a href="#" class="before">
-                    <img src="img/next_l.png" alt="before">
-                </a>
-                <a href="#" class="after">
-                    <img src="img/next_r.png" alt="after">
-                </a>
-            </div>            
+        <section class="lib_list"> 
             <div class="lib_slid">
-                <ul>
-                    <li class="list_items">
+                <ul class=" slider">
+                    <!-- <li class="list_items">
                         <a href="#">
                             <p class="list_img">
                                 <img src="img/library/book_list_01.jpg" alt="월간디자인">
@@ -93,7 +83,7 @@
                             </p>
                             <h3>마이웨딩</h3>
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </section>

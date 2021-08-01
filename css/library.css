@@ -23,6 +23,7 @@
     margin-bottom: 100px;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .lib_shop .shop_wrap figure{
     position: relative;   
@@ -65,6 +66,10 @@
 .lib_shop .shop_wrap .shop_txt h4{
     font-size: 1.5em;
 }
+.lib_shop .shop_wrap .shop_txt h6{
+    font-size: 1.2em;
+    color: #777;
+}
 .lib_shop .shop_wrap .shop_bt{
     display: flex;
 }
@@ -80,52 +85,42 @@
     background-color: #fdd000;
     color: #333;
 }
-.lib_shop .indi_ver{
-    position: absolute;
+.shop_wrap .slick-dots{
+    position:absolute;
+    /* width: 100%; */
+    z-index:3;
 }
-.lib_shop .indi_ver a{
-    width: 5px;
-    height: 5px;
-    border-radius: 2.5px;
-    background-color: #333;
-    margin: 10px 0;
+.shop_wrap .slick-dots li button{
+    width: 10px;
+    height: 10px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #454545;
+    margin: 5px 0;
+    font-size: 0;
 }
+.shop_wrap .slick-dots li.slick-active button{
+    border: 0;
+    border-radius: 5px;
+    background-color: #454545;        
+}
+
 
 /* lib_list */
 
 .lib_list{
     background-color: #dedede;      
     padding: 100px 0;  
-    position: relative;
     width: 100%;
-}
-.lib_list .lib_slid_btn{
-    position: absolute;
-    z-index: 99;
-    top: 50%;
-}
-.before{
-    position: relative;
-}
-.before img{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.after{ 
-    position: relative;
-}
-.after img{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
 }
 .lib_list .lib_slid ul{
     width: 100%;
+    position: relative;
 }
 .lib_list .lib_slid ul .list_items .list_img{
     border-radius: 0 0 0 50px;
-    margin-bottom: 50px;  
+    margin: 0 15px 50px; 
+
     overflow: hidden;
 }
 .lib_list .lib_slid ul .list_items .list_img img{
@@ -133,7 +128,7 @@
     transition: 0.5s;
 }
 .lib_list .lib_slid ul .list_items h3{
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
     line-height: 1;
     font-weight: 400;
@@ -142,6 +137,23 @@
     transform: scale(1.1) ;
 }
 
+.lib_list .slick-arrow{font-size: 0; border: 0; background: none;}
+.lib_list .slick-prev::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url('../img/next_l.png') no-repeat center center;
+    width: 20px; height: 20px;
+}
+.lib_list .slick-next::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url('../img/next_r.png') no-repeat center center;
+    width: 20px; height: 20px;
+}
 
 
 
@@ -294,11 +306,12 @@
         width: 1250px;
         margin: 0 auto; 
     }
-    .lib_shop .shop_wrap{
+    .lib_shop .shop_wrap li{
         display: flex;
     }
     .lib_shop .shop_wrap figure{
-        width: 618px;
+        width: 618px;        
+        height: 650px;
         margin-right: 144px;
     }
     .lib_shop .shop_wrap .shop_txt{
@@ -309,55 +322,29 @@
         width: 230px;
         line-height: 3;
     }
-    .lib_shop .indi_ver{
-        width: 1250px;
+    .shop_wrap .slick-dots{
+        top: 50%; right: 0;
+        transform: translateY(-50%);
     }
-    .lib_shop .indi_ver{        
-        left: 50%; top: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-    }
-    .lib_shop .indi_ver a{
-        margin: 10px 0;
+    .shop_wrap .slick-dots li.slick-active button{
+        width: 10px;
+        height: 100px;
     }
 
     
     /* lib_list */
-
-    .lib_list .lib_slid_btn{
-        width: 1250px;
-        margin: 0 auto;        
-        top: 50%; left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-    }
-    .before{
-        width: 50%;
-    }
-    .before img{
-        left: -8%;
-    }
-    .after{
-        width: 50%;    
-    }
-    .after img{
-        right: -8%;
-    }
     .lib_list .lib_slid{
         width: 1250px;    
         margin: 0 auto;
     }
-    .lib_list .lib_slid ul{        
-        display: flex;  
-        justify-content: space-between;
-    }
-    .lib_list .lib_slid ul .list_items{
-        width: 350px;     
-    }
     .lib_list .lib_slid ul .list_items .list_img{
         height: 350px;
+    }
+    .lib_list .slick-prev::after{
+         left: -5%;
+    }
+    .lib_list .slick-next::after{
+        right: -5%;
     }
 
     /* lib_benefit */
@@ -477,11 +464,13 @@
         width: 100%;
         padding: 0 5%;
     }
-    .lib_shop .shop_wrap{
+    .lib_shop .shop_wrap li {
         display: flex;
+        justify-content: space-between;
     }
     .lib_shop .shop_wrap figure{
         width: 48%;
+        max-height: 400px;
     }
     .lib_shop .shop_wrap .shop_txt{
         width: 48%;
@@ -490,59 +479,31 @@
         width: 50%;
         line-height: 3;
     }
-    .lib_shop .indi_ver{
-        width: 95%;
+    .shop_wrap .slick-dots{
+        bottom: -10%; left: 50%;        
+        transform: translateX(-50%);
     }
-    .lib_shop .indi_ver{        
-        left: 50%; top: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+    .shop_wrap .slick-dots li.slick-active button{
+        width: 100px;
+        height: 10px;
     }
-    .lib_shop .indi_ver a{
-        margin: 10px 0;
-    }
+
 
     /* lib_list */
-
-    .lib_list .lib_slid_btn{
-        width: 100%;         
-        top: 50%;
-        transform: translateY(-50%);
-        display: flex;      
-    }
-    .before{
-        width: 50%;
-    }
-    .before img{
-        left: 15%;
-    }
-    .after{
-        width: 50%;
-        display: none;    
-    }
-    .after img{
-        right: -8%;
-    }    
     .lib_list .lib_slid{
-        width: 100%;    
-        padding-left: 15%;          
-    }
-    .lib_list .lib_slid ul{          
-        overflow: hidden;
-        display: flex;
-        justify-content: space-between;
-    }
-    .lib_list .lib_slid ul .list_items{
-        width: 50%; 
-        margin-right: 5%;         
-        flex-shrink: 0; 
+        width: 90%;    
+        margin: 0 auto;
     }
     .lib_list .lib_slid ul .list_items .list_img{
         height: 350px;
     }
-    
+    .lib_list .slick-prev::after{
+        left: -3%;
+   }
+   .lib_list .slick-next::after{
+       right: -3%;
+   }
+
     /* lib_benefit */
     .lib_benefit{
         width: 100%;
@@ -673,17 +634,31 @@
     }
     .lib_shop .shop_wrap .shop_bt{
         justify-content: center;
-    }       
-    .lib_shop .indi_ver{        
-        left: 50%; bottom: -3%;
-        transform: translate(-50%, 0);
-        display: flex;
-        justify-content: space-around;
+    } 
+    .shop_wrap .slick-dots{
+        bottom: -5%; left: 50%;
+        transform: translateX(-50%);
     }
-    .lib_shop .indi_ver a{
-        margin: 0 20px;
-    }   
+    .shop_wrap .slick-dots li.slick-active button{
+        width: 100px;
+        height: 10px;
+    }
 
+    
+    /* lib_list */
+    .lib_list .lib_slid{
+        width: 75%;    
+        margin: 0 auto;
+    }
+    .lib_list .lib_slid ul .list_items .list_img{
+        height: 330px;
+    }
+    .lib_list .slick-prev::after{
+        left: -7%;
+   }
+   .lib_list .slick-next::after{
+       right: -7%;
+   }
        
     /* lib_exp */
     .lib_exp{
@@ -754,46 +729,6 @@
         width: 50%;
         line-height: 3;
     } 
-    
-    /* lib_list */
-
-   .lib_list .lib_slid_btn{
-    width: 100%;         
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;      
-}
-    .before{
-        width: 50%;
-    }
-    .before img{
-        left: 25%;
-    }
-    .after{
-        width: 50%;
-        display: none;    
-    }
-    .after img{
-        right: -8%;
-    }    
-    .lib_list .lib_slid{
-        width: 100%;    
-        padding-left: 15%;          
-    }
-    .lib_list .lib_slid ul{          
-        overflow: hidden;
-        display: flex;
-        justify-content: space-between;
-    }
-    .lib_list .lib_slid ul .list_items{
-        width: 50%; 
-        margin-right: 5%;  
-        flex-shrink: 0;
-    }
-    .lib_list .lib_slid ul .list_items .list_img{
-        height: 300px;
-    }
-
 
     /* lib_benefit */
     .lib_benefit{
@@ -867,50 +802,6 @@
         line-height: 2.5;
         font-size: 1.3em;
     }    
-
-    /* lib_list */
-    .lib_list{       
-        margin-bottom: 100px;
-    }
-
-   .lib_list .lib_slid_btn{
-    width: 100%;         
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;      
-}
-    .before{
-        width: 50%;
-    }
-    .before img{
-        left: 10%;
-    }
-    .after{
-        width: 50%;
-        display: none;    
-    }
-    .after img{
-        right: -8%;
-    }    
-    .lib_list .lib_slid{
-        width: 100%;    
-        padding-left: 15%;          
-    }
-    .lib_list .lib_slid ul{          
-        overflow: hidden;
-        display: flex;
-        justify-content: space-between;
-    }
-    .lib_list .lib_slid ul .list_items{
-        width: 75%; 
-        margin-right: 10%; 
-        flex-shrink: 0; 
-    }    
-    .lib_list .lib_slid ul .list_items .list_img{
-        height: 250px;
-        margin-bottom: 30px;
-    }
-
 
     /* lib_benefit */
     .lib_benefit{

@@ -22,6 +22,7 @@
         position: relative;    
         height: 80px;   
         overflow: hidden;
+        text-overflow: ellipsis;
     }
     main .con div h2 span{
         text-transform: uppercase;
@@ -29,10 +30,9 @@
         font-size: 2.5em;
         letter-spacing: -3px;  
         color: #fff;    
-        animation: a1 1s forwards;
+        transform: translateY(100%); opacity: 0;        
     }
     @keyframes a1{
-        0%{transform: translateY(100%); opacity: 0;}
         100%{transform: translateY(0%); opacity: 1;}
     }
     main .con div p{  
@@ -46,33 +46,37 @@
         font-size: 1em;
         letter-spacing: -1px;
         font-weight: 400;
-        animation: a2 0.5s 0.5s forwards;
+        
         opacity: 0;
         line-height: 1.5;
+        transform: translateY(100%);
     }
     @keyframes a2{
-        0%{transform: translateY(100%);}
         100%{transform: translateY(0%); opacity: 1;}
     }
 
-    main .con h5{
+    main .con div h5{
         position: relative;   
         height: 30px;  
     }
-    main .con h5 span{
+    main .con div h5 span{
         color: #fff;   
         position: absolute;  
         font-size: 1.2em;
         letter-spacing: -1px;
         font-weight: 400;
-        animation: a3 0.5s 0.5s forwards;
         opacity: 0;
         text-transform: uppercase;
+        transform: translateY(100%);
     }
     @keyframes a3{
-        0%{transform: translateY(100%);}
         100%{transform: translateY(0%); opacity: 1;}
     }
+
+    main .con div.active h2 span{animation: a1 1s forwards;}
+    main .con div.active p > span{animation: a2 0.5s 0.5s forwards;}
+    main .con div.active h5 span{animation: a3 0.5s 0.5s forwards;}
+
     main .con a:hover h5 span{
         text-decoration: underline;
     }
