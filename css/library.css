@@ -482,6 +482,10 @@
     .shop_wrap .slick-dots{
         bottom: -10%; left: 50%;        
         transform: translateX(-50%);
+        display: flex;
+    }
+    .shop_wrap .slick-dots li{
+        margin: 0 5px
     }
     .shop_wrap .slick-dots li.slick-active button{
         width: 100px;
@@ -638,6 +642,10 @@
     .shop_wrap .slick-dots{
         bottom: -5%; left: 50%;
         transform: translateX(-50%);
+        display: flex;
+    }
+    .shop_wrap .slick-dots li{
+        margin: 0 5px
     }
     .shop_wrap .slick-dots li.slick-active button{
         width: 100px;

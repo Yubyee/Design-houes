@@ -24,8 +24,8 @@ section{
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    
-    display: none;
+    opacity: 0;    
+    display: flex;
 }
 .container .formBox h2{
     font-size: 2.5em;
@@ -77,12 +77,7 @@ section{
     background-size: contain;
 }
 .container .clickBox{    
-    position: absolute;
-    display: flex;
-    flex-direction: column;    
-    justify-content: center;
-    align-items: center;     
-    background-color: #fdd000;
+    /* position: absolute;  */
 }
 .container .clickBox h2{
     color: #fff;
@@ -98,11 +93,17 @@ section{
     letter-spacing: -2px;
 }
 .container .clickBox .clickRight, .clickLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+    opacity: 0; 
+    height: 100%;  
+    background-color: #fdd000;
 }
-.container .clickBox .clickRight, .clickLeft{
-    display: none;
-}
+.container .clickBox button:active {
+    transform: scale(0.98);
+  }
 .container .clickBox .signIn{
     padding-right: 7%;
     background: url('../img/next_r.png') no-repeat 86% center;
@@ -115,16 +116,16 @@ section{
 }
 
 .clickRight.active{
-    display: flex;
+    opacity: 1;
 }
 .formIn.active{
-    display: flex;
+    opacity: 1;
 }
 .clickLeft.active{
-    display: flex;
+    opacity: 1;
 }
 .formUp.active{
-    display: flex;
+    opacity: 1;
 }
 
 
@@ -160,7 +161,13 @@ section{
     .container .clickBox{    
         height: 600px;        
         top: 0; right: 0;
-        width: 50%;  
+        width: 100%;          
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+    .container .clickBox .clickRight, .clickLeft{
+        width: 50%;
     }
     .container .clickBox h2{        
         margin-bottom: 15px;
@@ -200,7 +207,13 @@ section{
     .container .clickBox{    
         height: 500px;
         top: 0; right: 0;
-        width: 50%;  
+        width: 100%;  
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+    }
+    .container .clickBox .clickRight, .clickLeft{
+        width: 50%;
     }
     .container .clickBox h2{     
         margin-bottom: 15px;
@@ -236,10 +249,16 @@ section{
         top: 0; left: 0;
         width: 100%;
     }
-    .container .clickBox{    
-        height: 130px;        
+    .container .clickBox{         
+        /* bottom: 0; left: 0; */
+        width: 100%;  height: 100%;
+        position: relative;
+    }
+    .container .clickBox .clickRight, .clickLeft{
+        width: 100%;         
+        height: 130px;  
+        position: absolute;
         bottom: 0; left: 0;
-        width: 100%;  
     }
     .container .clickBox h2{     
         margin-bottom: 5px;
