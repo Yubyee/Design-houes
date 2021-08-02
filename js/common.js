@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', function(){
                 function listUp(type){
                     li = '';
                     a[type].forEach(function(v){                
-                        li += `<li>
+                        li += `<li class="list_load">
                                 <a href="#">
                                     <h3>${v.title}</h3>
                                     <img src="${v.img}" alt="<${v.title}>의 이미지">
@@ -82,14 +82,31 @@ window.addEventListener('DOMContentLoaded', function(){
         const classMenuList = document.querySelectorAll('.classevent > p > a')
 
         classMenu.addEventListener('click', function(){
-            localStorage.pageName2 = ''
+            localStorage.pageName2 = '';
         })  
         for(let i=0; i<classMenuList.length; i++){
             classMenuList[i].addEventListener('click', function(){
                 localStorage.pageName2 = this.innerHTML
             })    
         }
+
+        if (window.matchMedia("(max-width: 768px)").matches) {
+            window.addEventListener('scroll', function(){
+                let domHeight = document.documentElement.offsetHeight;
+                let winHei = window.innerHeight;
+    
+                console.log(domHeight, winHei, this.scrollY)
+    
+                if(this.scrollY > 200){
+                    $('header').css('transform', 'translateY(-100%)')
+
+                }
+            });
+        }
         
+
+        
+
 
     }
 

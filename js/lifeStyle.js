@@ -5,6 +5,7 @@ window.addEventListener('DOMContentLoaded', function(){
     $.ajax({
         url: 'json/lifestyle.json',
         success:function(a){
+            
             let li , idx = 0;
 
             $('.title_sub').text(localStorage.pageName);
@@ -34,26 +35,34 @@ window.addEventListener('DOMContentLoaded', function(){
 
             function listUp(type){
                 li = '';
-                a[type].forEach(function(v){                
-                    li += `<li>
-                            <a href="#">
-                                <h3>${v.title}</h3>
-                                <img src="${v.img}" alt="<${v.title}>의 이미지">
-                            </a>
-                       </li>`
+                a[type].forEach(function(v){                                    
+                    li += `<li class="list_load">
+                                <a href="#">
+                                    <h3>${v.title}</h3>
+                                    <img src="${v.img}" alt="<${v.title}>의 이미지">
+                                </a>
+                            </li>`
                 });     
                 $('.life_gall').html(li)
+
+                $('.more button').show();
                 
                 $('.life_gall li').on('click',function(e){
                     e.preventDefault();
                     idx = $(this).index();
-                    console.log()
                     dataChange(localStorage.pageName.toLowerCase());
                     $('.popup').css({display: 'flex'});                            
         
                 }) 
+                load('#list_load','6');
+                $('.more button').on('click', function(){
+                    load('#list_load','3','.more');                    
+                });                 
+                
+                
             }
-            listUp('design');          
+            
+            listUp(localStorage.pageName.toLowerCase());          
 
             function dataChange(type){
                     li = `<p>
@@ -62,17 +71,35 @@ window.addEventListener('DOMContentLoaded', function(){
                         <h2>${a[type][idx].title}</h2>
                         <span>${a[type][idx].detail}</span>`;             
                 $('.popup').html(li);
-            }                
+            }        
+            
+            $(window).on('load', function(){
+                load('#list_load','6');
+                $('.more button').on('click', function(){
+                    load('#list_load','3','.more');
+                });
+            });
+
+            function load(id, count, btn){
+                let list = id + ' .list_load:not(.active)';
+                let listLength = $(list).length;
+                let listTotalCount;
+                if(count < listLength){
+                    listTotalCount = count;
+                }else{
+                    listTotalCount = listLength;
+                    $('.more button').hide();
+                }
+                $(list + ':lt(' + listTotalCount + ')').addClass('active');
+            }
             
             $('.popup').on('click', function(){
                 $(this).css({display: 'none'})
             });
 
-
             $('main a').on('click', function(e){
                 e.preventDefault();
             })
-
 
             console.log('성공')
         },

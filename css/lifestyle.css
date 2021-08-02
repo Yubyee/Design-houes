@@ -50,6 +50,10 @@
     background-color: #fff;
     overflow: hidden;    
     position: relative;
+    display: none;
+}
+.life_gall li.active{
+    display: block;
 }
 .life_gall li a::before{    
     content: '';
@@ -99,7 +103,7 @@
     display: flex;
     justify-content: center;
 }
-.more a{
+.more button{
     display: inline-block;
     background-color: #454545;
     color: #fff;
@@ -145,7 +149,7 @@
         width: 1250px;
         margin: 0 auto;
     }
-    .more a{
+    .more button{
         width: 30%;
     }
 }
@@ -183,7 +187,7 @@
     .more{
         width: 100%;
     }
-    .more a{
+    .more button{
         width: 47.5%;
     }
 }
@@ -228,7 +232,7 @@
     .more{
         width: 100%;
     }
-    .more a{
+    .more button{
         width: 50%;
     }
 }

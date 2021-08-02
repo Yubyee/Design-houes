@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', function(){
 
       $('.slick-current').find('div').addClass('active');
       $('.slide').on('afterChange', function(event, slick, currentSlide){
-        console.log(currentSlide);
+        // console.log(currentSlide);
         $('.con div').removeClass('active');
         $('.slick-current').find('div').addClass('active');
       });
