@@ -157,8 +157,7 @@ window.addEventListener('DOMContentLoaded', function(){
                         cell.style = 'color: blue';
                         row = calendar.insertRow(); // 토요일 다음에 셀 추가
                     }
-
-
+                    
                     a.class.forEach(function(v){
                         if(i == v.date && today.getMonth()+1 == v.month){
                             cell.className = 'cal_point';

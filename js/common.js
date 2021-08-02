@@ -102,12 +102,7 @@ window.addEventListener('DOMContentLoaded', function(){
             sPos.y2 = sPos.y;
         }
         window.addEventListener('scroll', function(){
-            let domHeight = document.documentElement.offsetHeight;
-            let winHei = window.innerHeight;
             scrollUpDwon();
-            // console.log(domHeight, winHei, this.scrollY)
-
-
             
             if (window.matchMedia("(max-width: 767px)").matches) {
                 if(sPos.state == 'down' && this.scrollY > 200){
