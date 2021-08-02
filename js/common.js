@@ -107,18 +107,17 @@ window.addEventListener('DOMContentLoaded', function(){
             scrollUpDwon();
             // console.log(domHeight, winHei, this.scrollY)
 
-            if(sPos.state == 'down' && this.scrollY > 200){
-                //DOWN
-                $('header').css('transform', 'translateY(-100%)')
-            }else{
-                //UP
-                $('header').css('transform', 'translateY(0%)')
-            }
 
             
             if (window.matchMedia("(max-width: 767px)").matches) {
-
-            }
+                if(sPos.state == 'down' && this.scrollY > 200){
+                    //DOWN
+                    $('header').css('transform', 'translateY(-100%)')
+                }else{
+                    //UP
+                    $('header').css('transform', 'translateY(0%)')
+                }    
+            }   
 
         });
 
