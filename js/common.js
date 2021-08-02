@@ -90,20 +90,38 @@ window.addEventListener('DOMContentLoaded', function(){
             })    
         }
 
-        if (window.matchMedia("(max-width: 768px)").matches) {
-            window.addEventListener('scroll', function(){
-                let domHeight = document.documentElement.offsetHeight;
-                let winHei = window.innerHeight;
-    
-                console.log(domHeight, winHei, this.scrollY)
-    
-                if(this.scrollY > 200){
-                    $('header').css('transform', 'translateY(-100%)')
-
-                }
-            });
+        //SCROLL        
+        let sPos = {state:'down',y:0, y2:0}
+        function scrollUpDwon(){
+            sPos.y = window.scrollY;
+            if(sPos.y > sPos.y2){
+                sPos.state = 'down';
+            }else{
+                sPos.state = 'up';
+            }
+            sPos.y2 = sPos.y;
         }
-        
+        window.addEventListener('scroll', function(){
+            let domHeight = document.documentElement.offsetHeight;
+            let winHei = window.innerHeight;
+            scrollUpDwon();
+            // console.log(domHeight, winHei, this.scrollY)
+
+            if(sPos.state == 'down' && this.scrollY > 200){
+                //DOWN
+                $('header').css('transform', 'translateY(-100%)')
+            }else{
+                //UP
+                $('header').css('transform', 'translateY(0%)')
+            }
+
+            
+            if (window.matchMedia("(max-width: 767px)").matches) {
+
+            }
+
+        });
+
 
         
 
